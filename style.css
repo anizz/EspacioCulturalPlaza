@@ -105,8 +105,14 @@ body {
     width: 70%;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
+.mi-carousel .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
 
 
 .hero-texto {
@@ -140,6 +146,11 @@ body {
 
     .mi-carousel {
         width: 100%;
+        
+    }
+
+    .mi-carousel .carousel-item img {
+        height: 350px;
     }
 
     .hero-texto {
