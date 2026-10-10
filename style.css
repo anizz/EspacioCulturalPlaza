@@ -1,4 +1,3 @@
-
 :root {
 --color-nav: #CCD3DF;
 --color-texto-nav: #2C3D44;
@@ -16,6 +15,12 @@
 --color-badge-tipo: #AFB77B; 
 --color-badge-gratis: #AFB77B;
 --color-borde-buscador: #A48247;
+--color-fondo-info: #DEDBD8;
+--color-fondo-celeste: #B0C2CA;
+--color-fondo-celeste-bright: #D6DEE1;
+--color-fondos-biblio: #D2C2A8; 
+--color-btn-vermas: #919B4F;
+--color-btn-vermas-hover: #444828;
 }
 
 
@@ -102,7 +107,7 @@ body {
 /*--------SLIDES---------*/
 
 .mi-carousel {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -118,17 +123,17 @@ body {
 .hero-texto {
     position: absolute;
     top: 75%;
-    left: 5%;
     transform: translateY(-50%);
     z-index: 10;
-    color: var(--color-letras-hero);
+    color: var(--color-letras-hero);    
 
     background: linear-gradient(
         135deg,
         rgba(204, 211, 223, 0.5),
         rgba(73, 106, 121, 0.5)
     );
-    padding: 0 30px;
+    padding: 0 200px;
+    width: 100%;
 }
 
 .hero-texto h1 {
@@ -156,7 +161,7 @@ body {
     .hero-texto {
         top: 50%;
         left: 5%;
-        width: 90%;
+        width: 60%;
         padding: 10px 15px;
     }
 
@@ -175,6 +180,7 @@ body {
 .buscador {
     width: 70%;
 }
+
 
 .buscador .input-group-text {
     background-color: var(--color-boton-espacios-base);
@@ -212,6 +218,20 @@ body {
 
 .btn {
     border-radius: 0;
+    
+}
+
+
+.btn-verMas{
+    background-color: var(--color-btn-vermas);
+    border-color: var(--color-btn-vermas);
+
+}
+
+.btn-verMas:hover {
+    background-color: var(--color-btn-vermas-hover);
+    border-color: var(--color-btn-vermas-hover);
+    
 }
 
 .tipo {
@@ -241,6 +261,7 @@ body {
     scrollbar-width: none;
     position: relative;
     width: 100%;
+    
 
 }
 
@@ -250,6 +271,9 @@ body {
     flex: 0 0 300px;
 }
 
+.card {
+    border: none;
+}
 
 
 .cards-container .card img {
@@ -385,4 +409,101 @@ li:hover{
 
 .piso-footer {
     font-size: 12px;
+}
+
+
+/*------------HERO BIBLIOTECA--------------*/
+
+#fotoBiblio {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/*------------DESCRIPCIÓN BIBLIOTECA--------------*/
+
+.info-biblio {
+    padding: 30px 30px;
+    background-color: var(--color-fondos-biblio);
+}
+
+.text-justificado{
+    text-align: justify;
+}
+
+/*------------Card INFO--------------*/
+
+/*.card-actividad {
+    width: 25rem;
+    
+}*/
+
+
+.card {
+    padding: 30px 30px;
+}
+
+
+.accordion-button:not(.collapsed), .accordion-button {
+    background-color: var(--color-fondos-biblio);
+}
+
+/*------------Asociate--------------*/
+
+li{
+    list-style: inherit;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: var(--color-fondo-celeste);
+    font-weight: 600;
+   
+}
+
+
+strong {
+    display: inline-block;
+    transition: all 0.3s ease;
+    
+}
+
+strong:hover {
+    
+    transform: scale(1.03) translateY(-1 px);
+    
+}
+
+/*---------NORMAS DE CONVIVENCIA-----------*/
+
+.accordion-button i {
+    color: var(--color-texto-titulos);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.accordion-button {
+    display: flex;
+    align-items: normal;
+    gap: 12px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color-texto-titulos);
+}
+
+.faq-color {
+    background-color: var(--color-fondo-celeste-bright);
+}
+
+.accordion-button.faq-color:not(.collapsed) {
+    background-color: var(--color-fondo-celeste);
+}
+
+.accordion-button.faq-color:focus {
+    box-shadow: 0 0 0 0.25rem rgba(135, 107, 59, 0.25);
+  
+    outline: none;
 }

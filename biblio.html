@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Ricardo Tudela | Espacio Cultural Plaza Independencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./Images/logo_plaza.png" alt="Espacio Cultural Ciudad de Mendoza">
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto  gap-1 gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#espacio-cultural">
+                            El espacio cultural
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda">
+                            Agenda
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Instituciones que lo conforman
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./biblio.html">
+                                    Biblioteca Ricardo Tudela
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Teatro Quintanilla
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    MMAMM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ANEXO MMAMM
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visitanos">
+                            Visitanos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- BOTONES-->
+    <section class="botones container d-flex flex-wrap justify-content-center gap-5 mt-5">
+        <a href="./biblio.html" class="btn boton-institucion" id="biblio">
+            <img src="./Images/biblio.png">
+        </a>
+        <a href="#" class="btn boton-institucion" id="teatro">
+            <img src="./Images/teatro.png">
+        </a>
+        <a href="#" class="btn boton-institucion" id="museo">
+            <img src="./Images/museo.png">
+        </a>
+        <a href="#" class="btn boton-institucion" id="anexo">
+            <img src="./Images/anexo.png">
+        </a>
+    </section>
+
+    <!-- HERO-->
+    <section class="hero-biblio mt-5 position-relative
+    ">
+            <img src="./Images/biblio-blanco.png" id="logoBiblio" class="position-absolute top-50 start-50 translate-middle">
+            <img src="./Images/1-scaled.jpg" id="fotoBiblio">
+    </section>
+
+    <!-- QUIENES SOMOS-->
+    <section class="container info-biblio mt-5 mb-5">
+        <h5>LA BIBLIOTECA</h5>
+        <div class="descrip-biblio text-justificado">La Biblioteca Pública Municipal Ricardo Tudela es un espacio de
+            encuentro, cultura y
+            conocimiento abierto a toda la comunidad. Cuenta con más de 20.000 ejemplares de material bibliográfico,
+            hemerográfico y documental, especializado en arte mendocino, argentino e internacional. Además, alberga una
+            amplia colección de libros de filosofía, literatura, literatura infanto-juvenil y literatura universal. <br>
+            Todas las personas pueden visitar la biblioteca y acceder a sus recursos, sin distinción de edad, condición
+            socioeconómica, nivel de formación u otras condiciones personales.<br>
+            La biblioteca cuenta con un sistema de estantería abierta, que permite a los visitantes acceder directamente
+            a los libros y consultar el material disponible.<br>
+            El acceso a la biblioteca y la consulta de sus materiales son libres y gratuitos para toda la comunidad.
+        </div>
+
+    </section>
+
+    <!--AGENDA TALLERES-->
+    <section class="container mt-5">
+        <!-- TITULO-->
+        <div class="row align-items-center encabezado-seccion pb-3">
+
+            <div class="col">
+                <h2>Agenda | Destacados</h2>
+            </div>
+
+            <div class="col text-end">
+                <h5><a href="#">Ver más</a></h5>
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+        <div class="cards-wrapper mt-5">
+            <button class="btn btn-light" id="botonScrollLeft">←</button>
+            <div class="cards-container">
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-light" id="botonScrollRight">→</button>
+        </div>
+    </section>
+
+    <!-- MISION VISION-->
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0 ps-0">
+                <div class="accordion" id="accordionMision">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseMision" aria-expanded="true" aria-controls="collapseMision">
+                                <strong>MISION</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseMision" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionMision">
+                            <div class="accordion-body">
+                                La Biblioteca Pública Municipal Ricardo Tudela tiene como misión garantizar el libre
+                                acceso a la información y al conocimiento, promoviendo el encuentro de la comunidad con
+                                la cultura, la literatura y las artes. A través de sus colecciones, servicios y
+                                actividades, busca ser un espacio público de aprendizaje, participación y acceso a la
+                                cultura para toda la comunidad.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3 mb-sm-0 pe-0">
+                <div class="accordion" id="accordionVision">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseVision" aria-expanded="true" aria-controls="collapseVision">
+                                <strong>VISION</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseVision" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionVision">
+                            <div class="accordion-body">
+                                La Biblioteca tiene como objetivos desarrollar actividades educativas, culturales e
+                                informativas; ampliar y democratizar el acceso libre a la información y garantizar su
+                                consulta pública; difundir y poner a disposición material bibliográfico especializado en
+                                artes visuales; promover la literatura mendocina y universal; y brindar herramientas y
+                                capacitación tecnológica que contribuyan al estudio, el aprendizaje y la recreación.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ACCESO A MATERIALES-->
+    <section class="container mt-5">
+        <div class="encabezado-seccion">
+            <h2>Acceso a material</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-6 mb-3 mb-sm-0 ps-0">
+                <div class="card card-actividad w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Consulta en la sala</h5>
+                        <p class="card-text">En la Biblioteca se puede consultar en sala la colección de libros
+                            personales de Ricardo Tudela, material especializado en artes visuales, catálogos de
+                            artistas, afiches del museo, diccionarios, atlas y enciclopedias.</p>
+                        <button class="btn btn-verMas btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sala"
+                            aria-expanded="false" aria-controls="sala">
+                            Ver más
+                        </button>
+
+                        <div class="collapse mt-3" id="sala">
+                            <div>
+                                <p><strong>Días:</strong> Martes a Viernes</p>
+                                <p><strong>Horario:</strong> 10 a 19 h</p>
+                                <p><strong>Lugar:</strong> Plaza Independencia</p>
+                                <p><strong>Sin necesidad de ser socio</strong></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6  mb-3 mb-sm-0 pe-0">
+                <div class="card card-actividad w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Llevar material a domicilio</h5>
+                        <p class="card-text">Para retirar materiales a domicilio es necesario ser socio de la
+                            Biblioteca. Se pueden solicitar hasta tres ejemplares por préstamo, por un período de 15
+                            días corridos, principalmente novelas, ensayos, cuentos, teatro y poesía. Por sus
+                            características, no se prestan a domicilio libros raros o ejemplares únicos, diccionarios,
+                            catálogos, atlas ni enciclopedias. El material debe ser devuelto en buen estado y dentro del
+                            plazo establecido. La renovación debe realizarse personalmente en la Biblioteca y, en caso
+                            de alta demanda, el plazo de devolución puede reducirse. Las devoluciones fuera de término
+                            generan una suspensión equivalente a dos días por cada día de atraso.</p>
+                        <a href="#socio" class="btn btn-verMas btn-primary">Asociate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ASOCIATE-->
+    <section class="container mt-5" id="socio">
+        <div class="encabezado-seccion">
+            <h2>Asociate</h2>
+        </div>
+        <div class="descrip-biblio text-justificado mt-5">Asociarse a la Biblioteca Pública Municipal Ricardo Tudela es
+            <strong>gratuito</strong> y te permite acceder al préstamo de materiales para llevar a domicilio.
+            Podés iniciar el trámite de manera <em>presencial o comenzar la inscripción online</em>. En ambos casos,
+            para
+            completar la asociación es necesario <em>acercarse personalmente a la Biblioteca.</em>
+        </div>
+        <!-- ASOCIATE, CARDS-->
+        <div class="row mt-5">
+            <!-- PRESENCIAL-->
+            <div class="col-sm-6 mb-3 mb-sm-0 ps-0">
+                <div class="card card-actividad w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Asociación presencial</h5>
+                        <p class="card-text">Podés realizar la inscripción en el Espacio Cultural Plaza Independencia,
+                            ubicado entre las calles Rivadavia y Patricias Mendocinas, de martes a viernes, de 10 a 19
+                            h. <br>
+
+                            Si tenés 16 años o más
+                            Para realizar la inscripción necesitás presentar:
+                        <ul>
+                            <li>Documento Nacional de Identidad.</li>
+                            <li>Una boleta de servicio o impuesto para acreditar el domicilio.</li>
+                            <li>Un número de celular y un teléfono de referencia.</li>
+                            <li>Lectura y firma del reglamento de la Biblioteca.</li>
+                        </ul>
+                        Si sos menor de 16 años
+                        Para asociarte, tenés que concurrir acompañado por tu madre, padre o tutor, y presentar:
+                        Documento Nacional de Identidad del menor y del adulto responsable.
+                        Una boleta de servicio o impuesto para acreditar el domicilio.
+                        Un número de celular y un teléfono de referencia.
+                        Lectura y firma del reglamento de la Biblioteca por parte del interesado y de su madre,
+                        padre o tutor.<br>
+
+                        <strong> El carnet de socio es personal e intransferible.</strong></p>
+                        <!--<button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tallerCeramica" aria-expanded="false" aria-controls="tallerCeramica">
+                            Ver más
+                        </button>-->
+                    </div>
+                </div>
+            </div>
+            <!-- ONLINE-->
+            <div class="col-sm-6 mb-3 mb-sm-0 pe-0">
+                <div class="card card-actividad w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Asociación online</h5>
+                        <p class="card-text">También podés iniciar el trámite de asociación enviando un correo
+                            electrónico a bibliotudela@ciudaddemendoza.gov.ar con la siguiente documentación:
+                        <ul>
+                            <li>Foto legible del frente y dorso de tu DNI.</li>
+                            <li>Foto legible de una boleta de servicio o impuesto para acreditar tu domicilio.</li>
+                            <li>Número de celular y un teléfono de referencia.</li>
+                        </ul>
+                        En el caso de menores de 16 años, deberán concurrir acompañados por su madre, padre o tutor.
+
+                        Para finalizar el trámite, es necesario <em><strong>asistir personalmente a la Biblioteca para
+                                realizar la firma del reglamento.</strong></em>
+
+
+                        <!--<button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#tallerCeramica" aria-expanded="false" aria-controls="tallerCeramica">
+                            Ver más
+                        </button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ASOCIATE, ACORDEON-->
+        <div class="row">
+            <!-- PRESENCIAL-->
+            <div class="col-sm-6 mb-3 mb-sm-0 ps-0 mt-5">
+                <div class="accordion" id="accordionPresencial">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePresencial" aria-expanded="true"
+                                aria-controls="collapsePresencial">
+                                <strong>Asociación presencial</strong>
+                            </button>
+                        </h2>
+                        <div id="collapsePresencial" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionPresencial">
+                            <div class="accordion-body">
+                                <p class="card-text">Podés realizar la inscripción en el Espacio Cultural Plaza Independencia,
+                            ubicado entre las calles Rivadavia y Patricias Mendocinas, de martes a viernes, de 10 a 19
+                            h. <br>
+
+                            Si tenés 16 años o más
+                            Para realizar la inscripción necesitás presentar:
+                        <ul>
+                            <li>Documento Nacional de Identidad.</li>
+                            <li>Una boleta de servicio o impuesto para acreditar el domicilio.</li>
+                            <li>Un número de celular y un teléfono de referencia.</li>
+                            <li>Lectura y firma del reglamento de la Biblioteca.</li>
+                        </ul>
+                        Si sos menor de 16 años
+                        Para asociarte, tenés que concurrir acompañado por tu madre, padre o tutor, y presentar:
+                        Documento Nacional de Identidad del menor y del adulto responsable.
+                        Una boleta de servicio o impuesto para acreditar el domicilio.
+                        Un número de celular y un teléfono de referencia.
+                        Lectura y firma del reglamento de la Biblioteca por parte del interesado y de su madre,
+                        padre o tutor.<br>
+
+                        <strong> El carnet de socio es personal e intransferible.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ONLINE-->
+            <div class="col-sm-6 mb-3 mb-sm-0 ps-0 mt-5">
+                <div class="accordion" id="accordionOnline">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOnline" aria-expanded="true" aria-controls="collapseOnline">
+                                <strong>Asociación online</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseOnline" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionOnline">
+                            <div class="accordion-body">
+                                También podés iniciar el trámite de asociación enviando un correo
+                                electrónico a bibliotudela@ciudaddemendoza.gov.ar con la siguiente documentación:
+                                <ul>
+                                    <li>Foto legible del frente y dorso de tu DNI.</li>
+                                    <li>Foto legible de una boleta de servicio o impuesto para acreditar tu domicilio.
+                                    </li>
+                                    <li>Número de celular y un teléfono de referencia.</li>
+                                </ul>
+                                En el caso de menores de 16 años, deberán concurrir acompañados por su madre, padre o
+                                tutor.
+
+                                Para finalizar el trámite, es necesario <em><strong>asistir personalmente a la
+                                        Biblioteca para
+                                        realizar la firma del reglamento.</strong></em>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NORMAS DE USO-->
+    <section class="container px-0 mt-5">
+        <div class="encabezado-seccion">
+            <h2>Normas de uso y convivencia</h2>
+        </div>
+        <div class="mt-3">
+            <p>Para garantizar un espacio agradable y cuidar los materiales de la Biblioteca, te pedimos tener en cuenta las siguientes pautas:
+            </p>
+        </div>
+
+        <div class="row mt-3">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                 <!-- Cuidado de los materiales -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed faq-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#usoMateriales" aria-expanded="true"
+                            aria-controls="usoMateriales">
+                            <i class="bi bi-book"></i>
+                            Cuidado de los materiales
+                        </button>
+                    </h2>
+                    <div id="usoMateriales" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Los libros y demás materiales deben
+                            utilizarse con cuidado. No está permitido
+                            realizar anotaciones o marcas, doblar o
+                            arrancar hojas ni realizar acciones que
+                            puedan deteriorarlos.
+
+                            En caso de daño, extravío o destrucción,
+                            la persona responsable deberá hacerse
+                            cargo de su reparación o reposición,
+                            de acuerdo con la normativa vigente.
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuidado de los espacios -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed faq-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#usoEspacio" aria-expanded="false"
+                            aria-controls="usoEspacio">
+                            <i class="bi bi-building"></i>
+                            Cuidado de los espacios
+                        </button>
+                    </h2>
+                    <div id="usoEspacio" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            No está permitido ingresar con alimentos,
+                            bebidas u otros elementos que puedan poner
+                            en riesgo la conservación de los materiales.
+                            Al retirarse, quienes utilicen los espacios
+                            de la Biblioteca deberán dejarlos en buenas
+                            condiciones.
+                        </div>
+                    </div>
+                </div>
+                <!-- Convivencia -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed faq-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#usoConvivencia" aria-expanded="false"
+                            aria-controls="usoConvivencia">
+                            <i class="bi bi-people"></i>
+                            Convivencia
+                        </button>
+                    </h2>
+                    <div id="usoConvivencia" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Se espera que todas las personas usuarias
+                            mantengan un trato respetuoso y adecuado
+                            con las demás personas y con el personal
+                            de la Biblioteca.
+                        </div>
+                    </div>
+                </div>
+                <!-- Acompañamiento de menores -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed faq-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#usoMenores" aria-expanded="false"
+                            aria-controls="usoMenores">
+                            <i class="bi bi-person-hearts"></i>
+                            Acompañamiento de menores
+                        </button>
+                    </h2>
+                    <div id="usoMenores" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Los menores de 12 años deben ingresar y
+                            permanecer en la Biblioteca acompañados
+                            por su madre, padre o tutor responsable.
+                        </div>
+                    </div>
+                </div>
+                <!-- Hemeroteca -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed faq-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#usoHemeroteca" aria-expanded="false"
+                            aria-controls="usoHemeroteca">
+                            <i class="bi bi-journal-text"></i>
+                            Hemeroteca
+                        </button>
+                    </h2>
+                    <div id="usoHemeroteca" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            El acceso a la Hemeroteca está reservado
+                            al personal autorizado.
+                        </div>
+                    </div>
+                </div>
+                <!-- Objetos personales -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed faq-color" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#usoObjetos" aria-expanded="false"
+                            aria-controls="usoObjetos">
+                            <i class="bi bi-backpack"></i>
+                            Objetos personales
+                        </button>
+                    </h2>
+                    <div id="usoObjetos" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            La Biblioteca no se responsabiliza por la
+                            pérdida o los daños de objetos personales
+                            de las personas usuarias.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER-->
+    <section class="footer">
+        <div class="container mt-5 pt-5 ">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 d-flex flex-column gap-2 primer-columna">
+                    <div class="d-flex align-items-start logo"><img src="./Images/logo-footer.png"></div>
+                    <div>
+                        <p> Secretaría de Desarrollo<br>
+                            Económico y Turismo</p>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 seg-columna">
+                    <ul class="d-flex flex-column gap-2 ps-0">
+                        <li><a href="#">El Espacio Cultural</a></li>
+                        <li><a href="#">Agenda</a></li>
+                        <li><a href="#">Instituciones que lo conforman</a></li>
+                        <li><a href="#">Visitanos</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 ultima-columna d-flex flex-column gap-2">
+                    <p> PLAZA INDEPENDENCIA:
+                        Gral. Espejo 300, M5502 AVJ, Mendoza.</p>
+
+                    <p> ANEXO MMAMM:
+                        Los Toneles, M5502 Mendoza.</p>
+
+                </div>
+            </div>
+            <div class="row piso-footer pt-3 pb-3">
+                <div class="col-12">Términos y condiciones · Política de privacidad · Accesibilidad
+                © 2026 Municipalidad de la Ciudad de Mendoza. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script-index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
