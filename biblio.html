@@ -300,13 +300,13 @@
         </div>
         <div class="row mt-5">
             <div class="col-sm-6 mb-3 mb-sm-0 ps-0">
-                <div class="card card-actividad w-100">
-                    <div class="card-body">
+                <div class="card card-actividad w-100 h-100">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Consulta en la sala</h5>
                         <p class="card-text">En la Biblioteca se puede consultar en sala la colección de libros
                             personales de Ricardo Tudela, material especializado en artes visuales, catálogos de
                             artistas, afiches del museo, diccionarios, atlas y enciclopedias.</p>
-                        <button class="btn btn-verMas btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sala"
+                        <button class="btn btn-verMas btn-primary mt-auto align-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#sala"
                             aria-expanded="false" aria-controls="sala">
                             Ver más
                         </button>
@@ -324,8 +324,8 @@
                 </div>
             </div>
             <div class="col-sm-6  mb-3 mb-sm-0 pe-0">
-                <div class="card card-actividad w-100">
-                    <div class="card-body">
+                <div class="card card-actividad w-100 h-100">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Llevar material a domicilio</h5>
                         <p class="card-text">Para retirar materiales a domicilio es necesario ser socio de la
                             Biblioteca. Se pueden solicitar hasta tres ejemplares por préstamo, por un período de 15
@@ -335,7 +335,7 @@
                             plazo establecido. La renovación debe realizarse personalmente en la Biblioteca y, en caso
                             de alta demanda, el plazo de devolución puede reducirse. Las devoluciones fuera de término
                             generan una suspensión equivalente a dos días por cada día de atraso.</p>
-                        <a href="#socio" class="btn btn-verMas btn-primary">Asociate</a>
+                        <a href="#socio" class="btn btn-verMas btn-primary mt-auto align-self-start">Asociate</a>
                     </div>
                 </div>
             </div>
@@ -367,10 +367,10 @@
                             Si tenés 16 años o más
                             Para realizar la inscripción necesitás presentar:
                         <ul>
-                            <li>Documento Nacional de Identidad.</li>
-                            <li>Una boleta de servicio o impuesto para acreditar el domicilio.</li>
-                            <li>Un número de celular y un teléfono de referencia.</li>
-                            <li>Lectura y firma del reglamento de la Biblioteca.</li>
+                            <li class="asociate-li">Documento Nacional de Identidad.</li>
+                            <li class="asociate-li">Una boleta de servicio o impuesto para acreditar el domicilio.</li>
+                            <li class="asociate-li">Un número de celular y un teléfono de referencia.</li>
+                            <li class="asociate-li">Lectura y firma del reglamento de la Biblioteca.</li>
                         </ul>
                         Si sos menor de 16 años
                         Para asociarte, tenés que concurrir acompañado por tu madre, padre o tutor, y presentar:
@@ -396,9 +396,9 @@
                         <p class="card-text">También podés iniciar el trámite de asociación enviando un correo
                             electrónico a bibliotudela@ciudaddemendoza.gov.ar con la siguiente documentación:
                         <ul>
-                            <li>Foto legible del frente y dorso de tu DNI.</li>
-                            <li>Foto legible de una boleta de servicio o impuesto para acreditar tu domicilio.</li>
-                            <li>Número de celular y un teléfono de referencia.</li>
+                            <li class="asociate-li">Foto legible del frente y dorso de tu DNI.</li>
+                            <li class="asociate-li">Foto legible de una boleta de servicio o impuesto para acreditar tu domicilio.</li>
+                            <li class="asociate-li">Número de celular y un teléfono de referencia.</li>
                         </ul>
                         En el caso de menores de 16 años, deberán concurrir acompañados por su madre, padre o tutor.
 
@@ -647,7 +647,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 seg-columna">
-                    <ul class="d-flex flex-column gap-2 ps-0">
+                    <ul class="d-flex flex-column gap-2 ps-0 lista-footer">
                         <li><a href="#">El Espacio Cultural</a></li>
                         <li><a href="#">Agenda</a></li>
                         <li><a href="#">Instituciones que lo conforman</a></li>
@@ -669,7 +669,10 @@
                 </div>
             </div>
         </div>
+
+
     </section>
+
 
     <script src="./script-index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

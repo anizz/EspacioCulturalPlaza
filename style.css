@@ -21,6 +21,7 @@
 --color-fondos-biblio: #D2C2A8; 
 --color-btn-vermas: #919B4F;
 --color-btn-vermas-hover: #444828;
+--color-btn-noticias: #496A79;
 }
 
 
@@ -194,7 +195,7 @@ body {
 }
 
 .buscador .form-control:focus {
-    border-color: #496A79;
+    border-color: var(--color-btn-noticias);
     box-shadow: none;
 }
 
@@ -209,7 +210,7 @@ body {
 /*------------AGENDA--------------*/
 
 .encabezado-seccion {
-    border-bottom: 1px solid #496A79;
+    border-bottom: 1px solid var(--color-btn-noticias);
 }
 
 .encabezado-seccion a{
@@ -337,11 +338,46 @@ body {
 }
 
 
+/* Mantener las tarjetas del carrusel en una fila */
+.cards-container {
+    align-items: stretch;
+}
+
+/* Cada tarjeta conserva su ancho y ocupa la altura de la fila */
+.cards-container .card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+/* El cuerpo ocupa el espacio disponible */
+.cards-container .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Todos los botones quedan abajo */
+.cards-container .btn-verMas {
+    margin-top: auto;
+    width: 100%;
+}
+
+
+/*------------NOTICIAS--------------*/
+
+.btn-noticia{
+    background-color: var(--color-btn-noticias);
+}
+
+.btn-noticia:hover {
+    background-color: var(--color-texto-nav);
+}
+
+
 /*------------FOOTER--------------*/
 
-li {
-list-style:  none;
-}
+
 
 
 
@@ -351,6 +387,10 @@ list-style:  none;
 
 .footer p, .footer li{
     color: var(--color-nav);
+}
+
+.lista-footer li{
+list-style:  none;
 }
 
 li a{
@@ -363,7 +403,7 @@ li{
     transition: transform 0.2s ease-in;
 }
 
-li:hover{
+.lista-footer li:hover{
     transform: scale(1.02);
 }
 
@@ -432,7 +472,7 @@ li:hover{
     text-align: justify;
 }
 
-/*------------Card INFO--------------*/
+/*------------ACCESO A MATERIAL. Card INFO--------------*/
 
 /*.card-actividad {
     width: 25rem;
@@ -456,7 +496,7 @@ li{
     transition: background-color 0.3s ease;
 }
 
-li:hover {
+.asociate-li:hover {
     background-color: var(--color-fondo-celeste);
     font-weight: 600;
    
@@ -507,3 +547,9 @@ strong:hover {
   
     outline: none;
 }
+
+
+
+
+
+
