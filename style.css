@@ -364,6 +364,14 @@ body {
 }
 
 
+@media (max-width: 575.98px) {
+    #botonScrollRight,
+    #botonScrollLeft {
+        display: none !important;
+    }
+}
+
+
 /*------------NOTICIAS--------------*/
 
 .btn-noticia{
@@ -461,6 +469,7 @@ li{
 }
 
 
+
 /*------------DESCRIPCIÓN BIBLIOTECA--------------*/
 
 .info-biblio {
@@ -471,6 +480,38 @@ li{
 .text-justificado{
     text-align: justify;
 }
+
+
+
+
+
+/*------------ AGENDA BIBLIO -----------------*/
+.columna-mision, .columna-vision{
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+@media (max-width: 575.98px) {
+    .columna-mision,
+    .columna-vision {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width: 576px) {
+    .columna-mision {
+        padding-right: 12px;
+    }
+
+    .columna-vision {
+        padding-left: 12px;
+    }
+}
+
+
+
 
 /*------------ACCESO A MATERIAL. Card INFO--------------*/
 
@@ -513,6 +554,10 @@ strong:hover {
     
     transform: scale(1.03) translateY(-1 px);
     
+}
+
+.desbordado {
+    overflow-wrap: anywhere;
 }
 
 /*---------NORMAS DE CONVIVENCIA-----------*/

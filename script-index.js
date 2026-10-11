@@ -28,6 +28,13 @@ contenedor.addEventListener("scroll", () => {
         izquierda.style.display = "none";
     }
 
+    // Si la pantalla mide 576px o menos, no mostrar los botones
+    if (window.matchMedia("(max-width: 575.98px)").matches) {
+        izquierda.style.display = "none";
+        derecha.style.display = "none";
+        return;
+    }
+
 });
 
 const contenedorNews = document.querySelector (".news-container");
@@ -54,12 +61,15 @@ btIzq.addEventListener("click", () => {
 
 // DETECTAR EL SCROLL
 contenedorNews.addEventListener("scroll", () => {
+    
+    
 
-   
     if (contenedorNews.scrollLeft > 0) {
         btIzq.style.display = "block";
     } else {
         btIzq.style.display = "none";
-    }
+    }   
 
 });
+
+
