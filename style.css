@@ -36,7 +36,13 @@ body {
     width: 200px;
     min-width: 120px;
     height: auto;
-    
+    transition: transform 1s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+   
+
 }
 
 /* Tablet */
@@ -63,6 +69,7 @@ body {
 
 .nav-link:hover {
     transform: scale(1.03);
+    
 }
 
 
