@@ -477,6 +477,191 @@ li{
 
 
 
+/*------------HITOS HISTORICOS--------------*/
+
+
+/* HISTORIA - LÍNEA DE TIEMPO HORIZONTAL */
+
+.historia-horizontal {
+    color: #272420;
+}
+
+.linea-tiempo-horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    position: relative;
+}
+
+/* Línea que conecta los hitos */
+.linea-tiempo-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #876B3B;
+}
+
+/* Cada hito */
+.hito-horizontal {
+    position: relative;
+    min-width: 0;
+    padding: 0 20px;
+}
+
+/* Año y punto */
+.hito-marca {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+/* Punto circular */
+.hito-marca::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #876B3B;
+    border: 3px solid #FAF7F2;
+    border-radius: 50%;
+    box-sizing: content-box;
+    z-index: 1;
+    margin-left: -7px;
+}
+
+/* Texto del año */
+.hito-marca span {
+    color: #876B3B;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* Contenido */
+.hito-texto {
+    padding-top: 5px;
+    border-top: 1px solid #D9D9D9;
+}
+
+.hito-texto h3 {
+    font-size: 1.15rem;
+    margin: 15px 0 10px;
+}
+
+.hito-texto p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Adaptación para tablet */
+@media (max-width: 767.98px) {
+    .hito-horizontal {
+        padding: 0 12px;
+    }
+
+    .hito-marca span {
+        font-size: 1.2rem;
+    }
+
+    .hito-texto h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Adaptación para celular */
+@media (max-width: 575.98px) {
+    .linea-tiempo-horizontal {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* La línea pasa a ser vertical */
+    .linea-tiempo-horizontal::before {
+        top: 8px;
+        bottom: 8px;
+        left: 7px;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .hito-horizontal {
+        padding: 0 0 0 28px;
+    }
+
+    .hito-marca {
+        margin-bottom: 12px;
+    }
+
+    .hito-marca::before {
+        position: absolute;
+        left: -28px;
+        top: 0;
+    }
+
+    .hito-marca span {
+        margin-top: 0;
+        font-size: 1.4rem;
+    }
+
+    .hito-texto {
+        border-top: none;
+    }
+
+    .hito-texto h3 {
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ANIMACIONES DE LA LÍNEA DE TIEMPO */
+
+.hito-marca::before {
+    transition: transform 0.25s ease;
+}
+
+.hito-texto {
+    transition: transform 0.25s ease;
+}
+
+/* Efectos para dispositivos que permiten hover */
+@media (hover: hover) {
+
+    .hito-horizontal:hover .hito-marca::before {
+        transform: scale(1.3);
+    }
+
+    .hito-horizontal:hover .hito-texto {
+        transform: translateY(5px);
+    }
+
+}
+
+/* Respetar la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+
+    .hito-marca::before,
+    .hito-texto {
+        transition: none;
+    }
+
+}
+
+@media (hover: hover) {
+    .hito-horizontal:hover {
+        cursor: default;
+    }
+}
+
+
+
+
+
 /*------------DESCRIPCIÓN BIBLIOTECA--------------*/
 
 .info-biblio {
@@ -493,6 +678,8 @@ li{
 
 
 /*------------ AGENDA BIBLIO -----------------*/
+
+/*APLICADO A ACORDEONES PARA QUE SEAN RESPONSIVES Y OCUPEN TODO EL ANCHO DEL CONTAINER*/
 .columna-mision, .columna-vision{
     padding-left: 0;
     padding-right: 0;
@@ -600,8 +787,55 @@ strong:hover {
     outline: none;
 }
 
+/*---------PREGUNTAS FRECUENTES-----------*/
+
+.faq {
+    background-color: var(--color-texto-nav);
+    color: var(--color-fondo-cardNoticia);
+
+}
+
+.faq>i {
+    color: var(--color-fondo-cardNoticia);
+
+}
+
+button.accordion-button.faq::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button.faq:not(.collapsed) {
+    background-color: var(--color-btn-noticias);
+    color: #FFFFFF;
+    box-shadow: none;
+}
 
 
+/*---------DATOS UTILES-----------*/
 
+
+/* DATOS ÚTILES: EFECTO HOVER */
+
+.dato-util {
+    transition: transform 0.25s ease;
+}
+
+@media (hover: hover) {
+
+    .dato-util:hover {
+        transform: translateY(5px);
+        cursor: default;
+    }
+
+}
+
+/* Respetar la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+
+    .dato-util {
+        transition: none;
+    }
+
+}
 
 
