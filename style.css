@@ -183,6 +183,29 @@ body {
     }
 }
 
+/*------------DESCRIPCION ESPACIO CULTURAL--------------*/
+
+.espacios {
+    transition: all 0.25s ease, color 0.25s ease;
+    border-radius: 4px;
+}
+
+@media (hover: hover) {
+    .espacios:hover {
+        background-color: #E8E9E0;
+        color: #5E6435;
+        cursor: default;
+        font-weight: 500;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .espacios {
+        transition: none;
+    }
+}
+
+
 /*------------BUSCADOR--------------*/
 
 .buscador {
