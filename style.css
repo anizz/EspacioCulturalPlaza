@@ -827,6 +827,10 @@ button.accordion-button.faq::after {
         cursor: default;
     }
 
+    .con-cursor {
+        cursor: default;
+    }
+
 }
 
 /* Respetar la preferencia de movimiento reducido */
