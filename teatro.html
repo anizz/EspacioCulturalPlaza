@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Municipal Julio Quintanilla | Espacio Cultural Plaza Independencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./Images/logo_plaza.png" alt="Espacio Cultural Ciudad de Mendoza">
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto  gap-1 gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            El espacio cultural
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Instituciones que lo conforman
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./biblio.html">
+                                    Biblioteca Ricardo Tudela
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="./teatro.html">
+                                    Teatro Quintanilla
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    MMAMM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ANEXO MMAMM
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda">
+                            Agenda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">
+                            Noticias
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- BOTONES-->
+    <section class="botones container d-flex flex-wrap justify-content-center gap-5 mt-5">
+        <a href="./biblio.html" class="btn boton-institucion" id="biblio">
+            <img src="./Images/biblio.png">
+        </a>
+        <a href="./teatro.html" class="btn boton-institucion" id="teatro">
+            <img src="./Images/teatro.png">
+        </a>
+        <a href="#" class="btn boton-institucion" id="museo">
+            <img src="./Images/museo.png">
+        </a>
+        <a href="#" class="btn boton-institucion" id="anexo">
+            <img src="./Images/anexo.png">
+        </a>
+    </section>
+
+    <!-- HERO-->
+    <section class="hero-biblio mt-5 position-relative
+    ">
+        <img src="./Images/teatro blancoo.png" id="logoTeatro"
+            class="position-absolute top-50 start-50 translate-middle">
+        <img src="./Images/teatro-hero.jpg" id="fotoTeatro">
+    </section>
+
+    <!-- QUIENES SOMOS-->
+    <section class="container info-teatro mt-5 mb-5 px-3">
+        <h5 class="con-cursor">EL TEATRO</h5>
+        <div class="descrip-biblio text-justificado con-cursor">El Teatro Quintanilla hoy se presenta renovado y como
+            parte
+            primordial de la constelación formada por el <a href="./mmamm.html" class="anclaTeatro"> MMAMM</a> y la <a
+                href="./biblio.html" class="anclaTeatro">Biblioteca Ricardo Tudela</a>, dentro del ECPI Espacio Cultural
+            Plaza Independencia; siendo una de las salas principales de Mendoza y con un objetivo claro, el de incidir
+            en la vida social y cultural mendocina a través de la poesía de la escena.
+        </div>
+
+    </section>
+
+    <!-- MISION VISION-->
+    <section class="container mt-5">
+        <div class="row">
+
+            <!-- VISIÓN -->
+            <div class="col-sm-6 mb-3 mb-sm-0 columna-vision-teatro ps-0">
+                <div class="accordion" id="accordionVisionTeatro">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed teatro-color" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseVisionTeatro" aria-expanded="false"
+                                aria-controls="collapseVisionTeatro">
+                                <strong>MISIÓN | VISIÓN</strong>
+                            </button>
+                        </h2>
+
+                        <div id="collapseVisionTeatro" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionVisionTeatro">
+                            <div class="accordion-body">
+                                El Teatro Quintanilla hoy se presenta renovado y como parte primordial de la
+                                constelación formada por el MMAMM y la Biblioteca Ricardo Tudela, dentro del ECPI
+                                Espacio Cultural Plaza Independencia; siendo una de las salas principales de Mendoza y
+                                con un objetivo claro, el de incidir en la vida social y cultural mendocina a través de
+                                la poesía de la escena.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MISIÓN -->
+            <div class="col-sm-6 mb-3 mb-sm-0 columna-mision-teatro pe-0">
+                <div class="accordion" id="accordionMisionTeatro">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed teatro-color" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseMisionTeatro" aria-expanded="false"
+                                aria-controls="collapseMisionTeatro">
+                                <strong>OBJETIVOS</strong>
+                            </button>
+                        </h2>
+
+                        <div id="collapseMisionTeatro" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionMisionTeatro">
+                            <div class="accordion-body">
+                                El Teatro Municipal Julio Quintanilla promueve el teatro mendocino a través de una
+                                programación artística amplia y diversa, abierta a la participación del sector teatral y
+                                al encuentro con la comunidad. Impulsa propuestas de reconocimiento nacional e
+                                internacional, fomenta la literatura mendocina y universal y apuesta por la inclusión,
+                                la innovación artística y el impacto social, con una gestión transparente, eficiente y
+                                sostenible.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--AGENDA TALLERES-->
+    <section class="container mt-5">
+        <!-- TITULO-->
+        <div class="row align-items-center encabezado-seccion pb-3">
+
+            <div class="col">
+                <h2 class="con-cursor">Agenda | Destacados</h2>
+            </div>
+
+            <div class="col text-end">
+                <h5 class="con-cursor"><a href="#">Ver más</a></h5>
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+        <div class="cards-wrapper mt-5">
+            <button class="btn btn-light" id="botonScrollLeft">←</button>
+            <div class="cards-container">
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-light" id="botonScrollRight">→</button>
+        </div>
+    </section>
+
+    <!--LA SALA-->
+    <section class="container mt-5 ">
+        <!--Imagen y descripción-->
+        <div class="row info-teatro">
+            <div class="col-12 col-md-6">
+                <img src="./Images/sala-teatro.jpg" alt="Sala del Teatro Municipal Julio Quintanilla"
+                    class="img-fluid foto-sala">
+            </div>
+            <div class="col-12 col-md-6 px-4">
+                <h5 class="con-cursor">Una sala para las artes escénicas</h5>
+                <P class="con-cursor">El Teatro Quintanilla cuenta con una sala accesible y equipada con tecnología
+                    digital para
+                    espectáculos de teatro, música y danza, además de conferencias, talleres, cursos y propuestas
+                    audiovisuales.</P>
+            </div>
+
+        </div>
+        <!--Cards de descripción técnica-->
+        <div class="row g-4 mt-5">
+
+            <div class="col-12 col-md-4">
+                <div class="card-teatro h-100">
+                    <h5 class="con-cursor">Iluminación escénica</h5>
+                    <p class="con-cursor">Dispone de un sistema de iluminación con artefactos LED, adecuados a las
+                        dimensiones del escenario,
+                        instalados en varas fijas y controlados mediante una consola digital. Esta configuración permite
+                        adaptar los diseños lumínicos a las necesidades de cada puesta escénica.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card-teatro h-100">
+                    <h5 class="con-cursor">Sonido</h5>
+                    <p class="con-cursor">La sala cuenta con un sistema de sonido profesional autoamplificado, con
+                        parlantes
+                        principales y
+                        subwoofer para frecuencias graves. Además, dispone de cuatro monitores de escenario para los
+                        artistas, microfonía profesional y consola digital, lo que permite responder a distintos
+                        requerimientos técnicos de los espectáculos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card-teatro h-100">
+                    <h5 class="con-cursor">Recursos audiovisuales</h5>
+                    <p class="con-cursor">Para proyecciones, conferencias y propuestas multimedia, el teatro dispone de
+                        un
+                        proyector que puede
+                        ubicarse según las necesidades de cada producción. También cuenta con un ciclorama fijo de las
+                        dimensiones del escenario, que puede utilizarse como fondo o destinarse a proyecciones, con la
+                        posibilidad de cubrirlo con un telón negro.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="mt-5 info-teatro">
+            <h5 class="con-cursor"> ¿Querés presentar tu espectáculo?</h5>
+            <p class="con-cursor">Conocé cómo presentar tu propuesta artística y solicitar una audiencia de
+                programación.
+            </p>
+            <button class="btn btn-primary btn-teatro">Solicitar audiencia</button>
+        </div>
+
+
+    </section>```
+
+    <!--HITOS-->
+    <section class="container hitos historia-teatro mt-5 mb-5">
+
+        <h2 class="text-center pb-3 con-cursor">Nuestra historia</h2>
+
+        <div class="linea-tiempo-horizontal">
+
+            <!-- Hito 1 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>1968</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>Nacimiento</h3>
+                    <p>
+                        El 23 de diciembre de 1968, nace como Miniteatro
+                        Municipal Mendoza según consta en el Decreto
+                        Municipal Nº 719/68. Luego de transitar por otra
+                        denominación, a partir del 3 de julio de 1973
+                        pasa a llamarse formalmente como se lo conoce en
+                        la actualidad. De ese modo se afianza en la escena
+                        artística y también constituye una verdadera
+                        reivindicación al poeta, escritor y periodista
+                        Julio Genaro Quintanilla, al celebrar su nombre.
+                        Quintanilla, quien es recordado también como
+                        patriota y enamorado de su terruño, cuyos poemas
+                        y letras reflejan su virtuosismo para comunicarse
+                        con el pueblo, con gran fluidez de expresión de
+                        sus ideas.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 2 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>Inicios</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>Primeros años</h3>
+                    <p>
+                        De los primeros años del Teatro, todavía se
+                        recuerda en su escenario: “Los días de Julián
+                        Bisbal”, obra de Roberto Cossa, con interpretación
+                        a cargo del grupo cordobés “El Juglar”, Dirección
+                        de Cristóbal Arnold y con un elenco integrado por
+                        Mariú Carreras, Gladys Ravalle, Rodolfo Ricolfe,
+                        Roberto Torres, Claudia Zani y Marcelo Urquidi.
+                        También el sonido del emblemático conjunto de Jazz
+                        mendocino denominado “Nueva Orleans Jazz Band”,
+                        grupo integrado por Juan Marcos Cobo, Sandro
+                        Cirillo, Julio Roldán y Juan Orozco, como así
+                        también la Escuela Municipal de Danzas y Ballet
+                        Folklórico de la Ciudad con una serie de clases
+                        públicas de danza, donde se presentaron alumnos
+                        de los distintos niveles de ballet clásico y
+                        ballet folklórico. Imposible olvidar numerosas
+                        vendimias en las terrazas del espacio.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 3 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>Legado</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>Actualidad</h3>
+                    <p>
+                        A partir del año 1997, es sede del Festival de
+                        Estrenos de Teatro, la Comedia Municipal
+                        Cristóbal Arnold, la Fiesta Provincial del
+                        Teatro, el Festival Internacional de Teatro
+                        Al Pie del Aconcagua, así como de diversos
+                        ciclos de música y danza. También de bellísimas
+                        propuestas artísticas de música, teatro,
+                        títeres, talleres, encuentros, danza y
+                        espectáculos multimediáticos, en todos los
+                        géneros. Con este pasado, su presente lo
+                        constituye también un lugar de investigación
+                        escénica desde donde se busca apoyar a los
+                        jóvenes talentos del teatro mendocino con la
+                        mirada en los valores de inclusión y respeto.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- NOTICIAS-->
+    <section class="container mt-5">
+        <!-- TITULO-->
+        <div class="row align-items-center encabezado-seccion pb-3">
+
+            <div class="col">
+                <h2 class="con-cursor">Noticias</h2>
+            </div>
+
+            <div class="col text-end">
+                <h5 class="con-cursor"> <a href="#">Ver más</a></h5>
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+        <div class="cards-wrapper mt-5">
+            <button class="btn btn-light" id="botonScrollLeftNews">←</button>
+            <div class="cards-container news-container">
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-light" id="botonScrollRightNews">→</button>
+        </div>
+
+
+    </section>
+
+    <!-- DATOS UTILES-->
+    <section class="container mt-5 info-teatro">
+        <div>
+            <h5 class="con-cursor">Datos útiles</h5>
+        </div>
+        <div class="row mt-3 datos-utiles-fila">
+            <div class="col-12 col-lg-4 mt-3 dato-util">
+                <strong>📍 Ubicación: </strong><br>Plaza Independencia.<br>Entre Rivadavia y Patricias Mendocinas,<br>
+                Mendoza.
+            </div>
+            <div class="col-12 col-lg-4 mt-3 dato-util">
+                <strong>🕐 Horarios:</strong><br> Martes a viernes de 10 a 13:30 hs.
+            </div>
+            <div class="col-12 col-lg-4 mt-3 dato-util">
+                <strong>✉️ Contacto:</strong> <span class="desbordado">teatroquintanilla@ciudaddemendoza.gov.ar</span>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER-->
+    <section class="footer">
+        <div class="container mt-5 pt-5 ">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 d-flex flex-column gap-2 primer-columna">
+                    <div class="d-flex align-items-start logo"><img src="./Images/logo-footer.png"></div>
+                    <div>
+                        <p class="con-cursor"> Secretaría de Desarrollo<br>
+                            Económico y Turismo</p>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 seg-columna">
+                    <ul class="d-flex flex-column gap-2 ps-0 lista-footer">
+                        <li><a href="#">El Espacio Cultural</a></li>
+                        <li><a href="#">Instituciones que lo conforman</a></li>
+                        <li><a href="#">Agenda</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 ultima-columna d-flex flex-column gap-2">
+                    <p class="con-cursor"> PLAZA INDEPENDENCIA:
+                        Gral. Espejo 300, M5502 AVJ, Mendoza.</p>
+
+                    <p class="con-cursor"> ANEXO MMAMM:
+                        Los Toneles, M5502 Mendoza.</p>
+
+                </div>
+            </div>
+            <div class="row piso-footer pt-3 pb-3">
+                <div class="col-12 con-cursor">Términos y condiciones · Política de privacidad · Accesibilidad
+                    © 2026 Municipalidad de la Ciudad de Mendoza. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

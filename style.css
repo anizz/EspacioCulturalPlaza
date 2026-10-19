@@ -22,6 +22,9 @@
 --color-btn-vermas: #919B4F;
 --color-btn-vermas-hover: #444828;
 --color-btn-noticias: #496A79;
+--color-fondos-teatro: #C9CEAC;
+--color-hover-teatro: #2A2D1B;
+--color-cards-teatro-detalle: #E1E3D4;
 }
 
 
@@ -193,7 +196,7 @@ body {
 @media (hover: hover) {
     .espacios:hover {
         background-color: #E8E9E0;
-        color: #5E6435;
+        color: var(--color-boton-teatro);
         cursor: default;
         font-weight: 500;
     }
@@ -209,7 +212,7 @@ body {
 /*------------BUSCADOR--------------*/
 
 .buscador {
-    width: 70%;
+    width: 100%;
 }
 
 
@@ -245,6 +248,17 @@ body {
 
 .encabezado-seccion a{
     text-decoration: none;
+    color: var(--color-btn-noticias);
+}
+
+.encabezado-seccion a:hover {
+    color: var(--color-boton-mam);
+    font-weight: 650;
+}
+
+.encabezado-seccion a:active {
+    color: var(--color-boton-mam);
+    font-weight: 650;
 }
 
 .btn {
@@ -254,16 +268,33 @@ body {
 
 
 .btn-verMas{
-    background-color: var(--color-btn-vermas);
-    border-color: var(--color-btn-vermas);
+    background-color: var(--color-nav);
+    border-color: var(--color-nav);
+    color: var(--color-texto-titulos);
 
 }
 
 .btn-verMas:hover {
+    background-color: var(--color-boton-mam);
+    border-color: var(--color-boton-mam);
+    
+}
+
+
+.btn-verMas-biblio{
+    background-color: var(--color-fondos-biblio);
+    border-color: var(--color-fondos-biblio);
+    color: var(--color-texto-titulos);
+
+}
+
+.btn-verMas-biblio:hover {
     background-color: var(--color-btn-vermas-hover);
     border-color: var(--color-btn-vermas-hover);
     
 }
+
+
 
 .tipo {
     position: absolute;
@@ -492,7 +523,7 @@ li{
 
 /*------------HERO BIBLIOTECA--------------*/
 
-#fotoBiblio {
+#fotoBiblio, #fotoTeatro {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -500,14 +531,11 @@ li{
 
 
 
-/*------------HITOS HISTORICOS--------------*/
+/*------------HITOS HISTORICOS BIBLIOTECA--------------*/
 
 
 /* HISTORIA - LÍNEA DE TIEMPO HORIZONTAL */
 
-.historia-horizontal {
-    color: #272420;
-}
 
 .linea-tiempo-horizontal {
     display: grid;
@@ -523,7 +551,7 @@ li{
     left: 0;
     right: 0;
     height: 2px;
-    background-color: #876B3B;
+    background-color: var(--color-boton-biblio);
 }
 
 /* Cada hito */
@@ -547,8 +575,8 @@ li{
     content: "";
     width: 16px;
     height: 16px;
-    background-color: #876B3B;
-    border: 3px solid #FAF7F2;
+    background-color: var(--color-boton-biblio);
+    border: 3px solid var(--color-fondo);
     border-radius: 50%;
     box-sizing: content-box;
     z-index: 1;
@@ -557,7 +585,7 @@ li{
 
 /* Texto del año */
 .hito-marca span {
-    color: #876B3B;
+    color: var(--color-boton-biblio);
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 12px;
@@ -566,7 +594,7 @@ li{
 /* Contenido */
 .hito-texto {
     padding-top: 5px;
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid var(--color-fondo-cardAgenda);
 }
 
 .hito-texto h3 {
@@ -690,6 +718,7 @@ li{
 .info-biblio {
     padding: 30px 30px;
     background-color: var(--color-fondos-biblio);
+    border-radius: 10px;
 }
 
 .text-justificado{
@@ -743,9 +772,14 @@ li{
 }
 
 
-.accordion-button:not(.collapsed), .accordion-button {
+.accordion-button.biblio-color:not(.collapsed), .accordion-button.biblio-color {
     background-color: var(--color-fondos-biblio);
 }
+
+.accordion-button.biblio-color-2:not(.collapsed), .accordion-button-2.biblio-color {
+    background-color: var(--color-fondos-biblio);
+}
+
 
 /*------------Asociate--------------*/
 
@@ -865,4 +899,253 @@ button.accordion-button.faq::after {
 
 }
 
+/*---------DESCRIPCION TEATRO-----------*/
+
+
+.info-teatro {
+    background-color: var(--color-fondos-teatro);
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+
+
+
+.anclaTeatro {
+    text-decoration: none;
+    color: var(--color-texto-titulos);
+    transition: background-color 0.25s ease, color 0.25s ease;
+    border-radius: 4px;
+    
+}
+
+
+
+@media (hover: hover) {
+    .anclaTeatro:hover {
+        
+        color: var(--color-hover-teatro);
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .anclaTeatro {
+        transition: none;
+    }
+}
+
+/*---------MISION Y VISION-----------*/
+
+.accordion-button.teatro-color:not(.collapsed), .accordion-button.teatro-color {
+    background-color: var(--color-fondos-teatro);
+}
+
+
+
+/*---------LA SALA-----------*/
+
+.foto-sala {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.card-teatro {
+    background-color:var(--color-cards-teatro-detalle);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.btn-teatro {
+    background-color: var(--color-btn-vermas-hover);
+    border-color: var(--color-btn-vermas-hover);
+}
+
+.btn-teatro:hover {
+     background-color: var(--color-boton-teatro);
+     border-color: var(--color-boton-teatro);
+}
+
+
+
+
+/*------------HITOS HISTORICOS TEATRO--------------*/
+
+
+/* HISTORIA DEL TEATRO - LÍNEA DE TIEMPO */
+
+/* Contenedor de los tres hitos */
+.historia-teatro .linea-tiempo-horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    position: relative;
+}
+
+/* Línea horizontal que conecta los hitos */
+.historia-teatro .linea-tiempo-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #C9CEAC;
+}
+
+/* Cada hito */
+.historia-teatro .hito-horizontal {
+    position: relative;
+    min-width: 0;
+    padding: 0 20px;
+}
+
+/* Contenedor del año o etiqueta */
+.historia-teatro .hito-marca {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+/* Círculos de la línea de tiempo */
+.historia-teatro .hito-marca::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #C9CEAC;
+    border: 3px solid var(--color-fondo);
+    border-radius: 50%;
+    box-sizing: content-box;
+    z-index: 1;
+    margin-left: -7px;
+}
+
+/* Años y etiquetas */
+.historia-teatro .hito-marca span {
+    color: #5E6435;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* Contenido de cada hito */
+.historia-teatro .hito-texto {
+    padding-top: 5px;
+    border-top: 1px solid var(--color-fondo-cardAgenda);
+    transition: transform 0.25s ease;
+}
+
+/* Títulos */
+.historia-teatro .hito-texto h3 {
+    font-size: 1.15rem;
+    margin: 15px 0 10px;
+}
+
+/* Párrafos */
+.historia-teatro .hito-texto p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Animación de los círculos */
+.historia-teatro .hito-marca::before {
+    transition: transform 0.25s ease;
+}
+
+/* Efectos al pasar el cursor */
+@media (hover: hover) {
+
+    .historia-teatro .hito-horizontal:hover .hito-marca::before {
+        transform: scale(1.3);
+    }
+
+    .historia-teatro .hito-horizontal:hover .hito-texto {
+        transform: translateY(5px);
+    }
+
+    .historia-teatro .hito-horizontal:hover {
+        cursor: default;
+    }
+}
+
+/* Adaptación para tablet */
+@media (max-width: 767.98px) {
+
+    .historia-teatro .hito-horizontal {
+        padding: 0 12px;
+    }
+
+    .historia-teatro .hito-marca span {
+        font-size: 1.2rem;
+    }
+
+    .historia-teatro .hito-texto h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Adaptación para celular */
+@media (max-width: 575.98px) {
+
+    .historia-teatro .linea-tiempo-horizontal {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* La línea pasa a ser vertical */
+    .historia-teatro .linea-tiempo-horizontal::before {
+        top: 8px;
+        bottom: 8px;
+        left: 7px;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .historia-teatro .hito-horizontal {
+        padding: 0 0 0 28px;
+    }
+
+    .historia-teatro .hito-marca {
+        margin-bottom: 12px;
+    }
+
+    /* Alinea los círculos con la línea vertical */
+    .historia-teatro .hito-marca::before {
+        position: absolute;
+        left: -28px;
+        top: 0;
+        margin-left: 0;
+    }
+
+    .historia-teatro .hito-marca span {
+        margin-top: 0;
+        font-size: 1.4rem;
+    }
+
+    .historia-teatro .hito-texto {
+        border-top: none;
+    }
+
+    .historia-teatro .hito-texto h3 {
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+}
+
+/* Respeta la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+
+    .historia-teatro .hito-marca::before,
+    .historia-teatro .hito-texto {
+        transition: none;
+    }
+}
 
