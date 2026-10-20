@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo Municipal de Arte Moderno | Espacio Cultural Plaza Independencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./Images/logo_plaza.png" alt="Espacio Cultural Ciudad de Mendoza">
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto  gap-1 gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            El espacio cultural
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Instituciones que lo conforman
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./biblio.html">
+                                    Biblioteca Ricardo Tudela
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="./teatro.html">
+                                    Teatro Quintanilla
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    MMAMM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    ANEXO MMAMM
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda">
+                            Agenda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">
+                            Noticias
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- BOTONES-->
+    <section class="botones container d-flex flex-wrap justify-content-center gap-5 mt-5">
+        <a href="./biblio.html" class="btn boton-institucion" id="biblio">
+            <img src="./Images/biblio.png">
+        </a>
+        <a href="./teatro.html" class="btn boton-institucion" id="teatro">
+            <img src="./Images/teatro.png">
+        </a>
+        <a href="./mmamm.html" class="btn boton-institucion" id="museo">
+            <img src="./Images/museo.png">
+        </a>
+        <a href="#" class="btn boton-institucion" id="anexo">
+            <img src="./Images/anexo.png">
+        </a>
+    </section>
+
+    <!-- HERO-->
+    <section class="hero-biblio mt-5 position-relative
+    ">
+        <img src="./Images/mmamm-blanco.png" id="logoMmamm" class="position-absolute top-50 start-50 translate-middle">
+        <img src="./Images/mmamm.jpg" id="fotoMmamm">
+    </section>
+
+    <!-- DESCRIPCION-->
+    <section class="container info-museo mt-5 mb-5 px-3">
+        <h5 class="con-cursor">EL MUSEO</h5>
+        <div class="descrip-biblio text-justificado con-cursor">El <strong>Municipal de Arte Moderno de Mendoza</strong>
+            es una institución pública, dependiente de la Secretaría de Turismo y Cultura de la Municipalidad de la
+            Ciudad de Mendoza. En la actualidad cuenta con una colección de obras que asciende a más de 1.400 piezas
+            entre instalaciones, pinturas, esculturas, fotografías, dibujos y grabados. Como particularidades podemos
+            citar artesanías en cuero, madera y textiles.
+        </div>
+    </section>
+
+    <!-- MISION VISION-->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0 columna-mision ">
+                <div class="accordion" id="accordionMision">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed museo-color" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseMision" aria-expanded="false"
+                                aria-controls="collapseMision">
+                                <strong class="fuente-objetivo-mision">MISION | VISION</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseMision" class="accordion-collapse collapse con-cursor"
+                            data-bs-parent="#accordionMision">
+                            <div class="accordion-body">
+                                El MMAMM se suma a los debates contemporáneos de la museología latinoamericana,
+                                repensando el rol del museo en su contexto actual. Su misión es reunir, conservar,
+                                investigar y difundir las artes visuales de Mendoza, promoviendo un espacio de reflexión
+                                crítica y práctica artística en estrecho vínculo con la comunidad. A través de la
+                                educación, el intercambio y la participación, busca garantizar el acceso igualitario a
+                                la cultura como un derecho humano fundamental.
+                                Aspira a consolidarse como un espacio articulador entre las comunidades, las expresiones
+                                artísticas, la historia del arte local y su entorno, impulsando el pensamiento estético
+                                situado y generando nuevas formas de encuentro con el arte. Para ello, busca superar las
+                                barreras simbólicas que dificultan el acceso a la experiencia artística, promoviendo el
+                                diálogo, la participación y la construcción colectiva de la cultura.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3 mb-sm-0 columna-vision">
+                <div class="accordion" id="accordionVision">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed museo-color-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseVision" aria-expanded="false"
+                                aria-controls="collapseVision">
+                                <strong class="fuente-objetivo-mision">OBJETIVOS</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseVision" class="accordion-collapse collapse con-cursor"
+                            data-bs-parent="#accordionVision">
+                            <div class="accordion-body">
+                                El MMAMM busca consolidarse como un espacio de diálogo, encuentro, reflexión y
+                                construcción colectiva de conocimiento, promoviendo la accesibilidad, la equidad
+                                cultural, la inclusión social y la sustentabilidad. Para ello, propone acercar el museo,
+                                su colección y su historia a todos los públicos, garantizando la participación activa de
+                                la comunidad y desarrollando programas educativos y actividades que fomenten el
+                                intercambio de saberes y el vínculo con las prácticas artísticas locales.
+                                Asimismo, se propone reconocer, visibilizar y legitimar las producciones de la comunidad
+                                artística mendocina; conservar, difundir e incrementar las obras de su colección; y
+                                ampliar y democratizar el acceso al archivo documental para su consulta pública. También
+                                busca fortalecer las estrategias de cooperación e intercambio con artistas,
+                                instituciones y otros espacios culturales, generando nuevas oportunidades de
+                                participación, aprendizaje y desarrollo cultural.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- HITOS-->
+    <section class="container hitos historia-mmam mt-5 mb-5">
+
+        <h2 class="text-center pb-3 con-cursor">Nuestra historia</h2>
+
+        <div class="linea-tiempo-horizontal">
+
+            <!-- Hito 1 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>1931-1945</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>Los antecedentes</h3>
+                    <p>
+                        La creación de la Academia Municipal de Bellas Artes
+                        y las iniciativas culturales municipales sentaron
+                        las bases para el desarrollo de las artes visuales
+                        en Mendoza.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 2 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>1962–1967</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>La creación del museo</h3>
+                    <p>
+                        Durante la década de 1960 se impulsó el proyecto
+                        de creación del museo. Su actividad comenzó en
+                        julio de 1964 y fue inaugurado oficialmente el
+                        8 de agosto de 1967.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 3 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>1972</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>Una nueva sede</h3>
+                    <p>
+                        El museo se trasladó al antiguo edificio del
+                        Jockey Club, ubicado en la avenida San Martín 1143,
+                        consolidando su presencia en la vida cultural
+                        de la ciudad.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 4 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>Desde 1979</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>El archivo especializado</h3>
+                    <p>
+                        Se comenzó a organizar un archivo especializado
+                        en artes visuales, integrado por currículums,
+                        catálogos, recortes de prensa y fotografías,
+                        entre otros documentos vinculados con la
+                        producción artística.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 5 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>1991</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>En Plaza Independencia</h3>
+                    <p>
+                        El 30 de agosto, el MMAMM se instaló en el
+                        subsuelo de la Plaza Independencia, fortaleciendo
+                        su vínculo con uno de los espacios públicos
+                        más representativos de Mendoza.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 6 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>2007</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>Reorganización del archivo</h3>
+                    <p>
+                        Se impulsó un proyecto de reorganización de
+                        las colecciones documentales para favorecer
+                        su conservación y facilitar la investigación
+                        sobre la historia del arte.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 7 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>2011</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>Una nueva etapa</h3>
+                    <p>
+                        El archivo avanzó en su organización y
+                        equipamiento, fortaleciendo las condiciones
+                        para la consulta, la investigación y la
+                        preservación de la memoria artística local.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Hito 8 -->
+            <article class="hito-horizontal">
+                <div class="hito-marca">
+                    <span>2018</span>
+                </div>
+
+                <div class="hito-texto">
+                    <h3>El Anexo MMAMM</h3>
+                    <p>
+                        La apertura del Anexo MMAMM en el Parque Central
+                        amplió los espacios de encuentro y participación
+                        cultural, acercando nuevas propuestas artísticas
+                        a la comunidad.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- LABORATORIO-->
+    <section class="container laboratorio-seccion">
+        <div class="col encabezado-seccion">
+            <h2 class="con-cursor">Laboratorio de Conservación y Restauración</h2>
+        </div>
+        <div class="col descrip-biblio text-justificado con-cursor mt-3">El Laboratorio de Conservación y Restauración
+            del
+            Museo Municipal de Arte Moderno de Mendoza (MMAMM) surgió entre 2006 y 2008 a partir de un proyecto
+            orientado a la conservación preventiva de la sala de guarda del patrimonio del museo. Desde entonces,
+            desarrolla tareas de documentación, organización, conservación, restauración y seguimiento de
+            colecciones y fondos documentales vinculados con las artes visuales, tanto del museo como de la
+            Municipalidad de la Ciudad de Mendoza.
+        </div>
+
+        <div class="row mt-4 align-items-start">
+            <div class="col-12 col-sm-3 mb-3 mb-sm-0">
+                <img src="./Images/lab-1.jpg" alt="laborario" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm-9">
+                <h6 class="con-cursor">Áreas de trabajo</h6>
+                <div class="descrip-biblio text-justificado con-cursor">El laboratorio trabaja en la preservación de los
+                    bienes culturales mediante acciones de conservación preventiva, conservación y restauración, con el
+                    propósito de prolongar su vida útil y contribuir a la protección del patrimonio artístico e
+                    histórico de
+                    la ciudad. Estas tareas se complementan con la documentación y el estudio de las colecciones,
+                    fundamentales para conocerlas, resguardarlas y favorecer su difusión pública.
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 align-items-start">
+            <div class="col-12 col-sm-3 mb-3 mb-sm-0">
+                <img src="./Images/lab-1.jpg" alt="laboratorio" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm-9">
+                <h6 class="con-cursor">Investigación y formación</h6>
+                <div class="descrip-biblio text-justificado con-cursor">La investigación constituye un eje central de su
+                    actividad. A través del trabajo interdisciplinario y del uso de herramientas científicas y
+                    tecnológicas,
+                    el laboratorio busca profundizar el conocimiento de las obras y desarrollar metodologías para su
+                    estudio
+                    y conservación. Asimismo, promueve la formación y actualización de profesionales y técnicos mediante
+                    instancias de capacitación e intercambio con instituciones y especialistas.
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 align-items-start">
+            <div class="col-12 col-sm-3 mb-3 mb-sm-0">
+                <img src="./Images/lab-1.jpg" alt="laboratorio" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm-9">
+                <h6 class="con-cursor">Patrimonio, cultura e identidad</h6>
+                <div class="descrip-biblio text-justificado con-cursor">El laboratorio contribuye a la protección y
+                    puesta
+                    en valor del patrimonio cultural de Mendoza, promoviendo su reconocimiento como parte de la memoria
+                    y la
+                    identidad colectiva. Su labor busca fomentar la conciencia social sobre la importancia del cuidado
+                    de
+                    los bienes patrimoniales y favorecer su transmisión a las generaciones futuras.
+                    “Los bienes culturales o patrimoniales son un medio de comunicación intransferible, único, porque
+                    son
+                    testimonios que nos revelan la identidad del hombre, de un pueblo, de una nación, de una época; son
+                    parte de la historia de Mendoza. Por eso, hacer su conservación es proteger el futuro”.
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- VISITAS MMAMM -->
+    <section class="container visitas-mmamm my-5">
+
+        <div class="encabezado-seccion mb-4">
+            <h2>Visitas</h2>
+            
+        </div>
+        <div>
+            <p>Conocé el museo y descubrí las propuestas para visitar sus espacios. Los horarios de visita son de <strong>Martes a Viernes de 10 a 19h y Sábados, Domingos y feriados de 16 a 20h.</strong></p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- CARD: VISITAS EDUCATIVAS -->
+            <div class="col-12 col-md-6">
+                <article class="card card-visita-mmamm card-educativas h-100">
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-mortarboard icono-visita-mmamm"></i>
+
+                        <h3 class="h4 mt-3">Visitas educativas</h3>
+                        <span class="etiqueta-visita">CON TURNO PREVIO</span>
+
+                        <hr>
+
+                        <div class="dato-visita-mmamm">
+                            <i class="bi bi-calendar-event"></i>
+                            <div>
+                                <strong>Martes y jueves</strong>
+                                <p>10 y 16 h</p>
+                            </div>
+                        </div>
+
+                        <div class="dato-visita-mmamm mt-3">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <strong>Solicitá tu turno</strong>
+                                <p>
+                                    <a href="mailto:comunidadmmamm@ciudaddemendoza.gov.ar">
+                                        comunidadmmamm@ciudaddemendoza.gov.ar
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="aclaracion-visita mt-3">
+                            En el correo, indicá institución, año, espacio curricular
+                            y cantidad de estudiantes.
+                        </p>
+
+                    </div>
+                </article>
+            </div>
+
+            <!-- CARD: PÚBLICO GENERAL -->
+            <div class="col-12 col-md-6">
+                <article class="card card-visita-mmamm card-publico h-100">
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-people icono-visita-mmamm"></i>
+
+                        <h3 class="h4 mt-3">Público general</h3>
+                        <span class="etiqueta-visita">SIN TURNO PREVIO</span>
+
+                        <hr>
+
+                        <div class="dato-visita-mmamm">
+                            <i class="bi bi-calendar-event"></i>
+                            <div>
+                                <strong>Miércoles y sábados</strong>
+                                <p>18 h</p>
+                            </div>
+                        </div>
+
+                        <div class="dato-visita-mmamm mt-3">
+                            <i class="bi bi-door-open"></i>
+                            <div>
+                                <strong>Entrada sin reserva</strong>
+                                <p>Acercate al museo en el horario de visita.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <!-- UBICACIÓN -->
+        <div class="mapa-mmamm mt-4">
+
+            <div class="mapa-mmamm-info">
+                <div>
+                    <h3 class="h5 mb-1">¿Dónde estamos?</h3>
+                    <p class="mb-0">Museo Municipal de Arte Moderno de Mendoza</p>
+                </div>
+
+                <a class="enlace-mapa-mmamm"
+                    href="https://www.google.com/maps/search/?api=1&query=Museo+Municipal+de+Arte+Moderno+de+Mendoza"
+                    target="_blank" rel="noopener noreferrer">
+                    Cómo llegar
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+            </div>
+
+            <a class="miniatura-mapa-mmamm"
+                href="https://www.google.com/maps/search/?api=1&query=Museo+Municipal+de+Arte+Moderno+de+Mendoza"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Abrir ubicación del Museo Municipal de Arte Moderno de Mendoza en Google Maps">
+
+                <iframe title="Ubicación del Museo Municipal de Arte Moderno de Mendoza"
+                    src="https://maps.google.com/maps?q=Museo%20Municipal%20de%20Arte%20Moderno%20de%20Mendoza&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <span class="indicacion-mapa-mmamm">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                    Abrir en Google Maps
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    
+    <!-- FOOTER-->
+    <section class="footer">
+        <div class="container mt-5 pt-5 ">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 d-flex flex-column gap-2 primer-columna">
+                    <div class="d-flex align-items-start logo"><img src="./Images/logo-footer.png"></div>
+                    <div>
+                        <p class="con-cursor"> Secretaría de Desarrollo<br>
+                            Económico y Turismo</p>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 seg-columna">
+                    <ul class="d-flex flex-column gap-2 ps-0 lista-footer">
+                        <li><a href="#">El Espacio Cultural</a></li>
+                        <li><a href="#">Instituciones que lo conforman</a></li>
+                        <li><a href="#">Agenda</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 ultima-columna d-flex flex-column gap-2">
+                    <p class="con-cursor"> PLAZA INDEPENDENCIA:
+                        Gral. Espejo 300, M5502 AVJ, Mendoza.</p>
+
+                    <p class="con-cursor"> ANEXO MMAMM:
+                        Los Toneles, M5502 Mendoza.</p>
+
+                </div>
+            </div>
+            <div class="row piso-footer pt-3 pb-3">
+                <div class="col-12 con-cursor">Términos y condiciones · Política de privacidad · Accesibilidad
+                    © 2026 Municipalidad de la Ciudad de Mendoza. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
