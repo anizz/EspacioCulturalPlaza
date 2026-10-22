@@ -1175,11 +1175,21 @@ background-color: var(--color-fondo-celeste);
 .btn-teatro {
     background-color: var(--color-btn-vermas-hover);
     border-color: var(--color-btn-vermas-hover);
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-teatro:hover {
     background-color: var(--color-boton-teatro);
     border-color: var(--color-boton-teatro);
+    transform: translateY(-3px);
+}
+
+.fondo-solicitud-sala {
+    transition: all 0.3s ease-in-out;
+}
+
+.fondo-solicitud-sala:hover {
+    background-color: var(--color-badge-gratis);
 }
 
 
