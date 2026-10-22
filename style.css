@@ -1,31 +1,32 @@
 :root {
---color-nav: #CCD3DF;
---color-texto-nav: #2C3D44;
---color-fondo: #FAF7F2;
---color-fondo-cardAgenda: #D9D9D9;
---color-fondo-cardNoticia: #FFFFFF;
---color-letras-hero: #272420;
---color-texto-titulos: #000000;
---color-footer: #3E3832;
---color-boton-espacios-base: #C3BDB6;
---color-boton-biblio: #876B3B;
---color-boton-teatro: #5E6435;
---color-boton-mam: #3B545E;
---color-boton-anexo: #598192;
---color-badge-tipo: #AFB77B; 
---color-badge-gratis: #AFB77B;
---color-borde-buscador: #A48247;
---color-fondo-info: #DEDBD8;
---color-fondo-celeste: #598192;
---color-fondo-celeste-bright: #D6DEE1;
---color-fondos-biblio: #D2C2A8; 
---color-btn-vermas: #919B4F;
---color-btn-vermas-hover: #444828;
---color-btn-noticias: #496A79;
---color-fondos-teatro: #C9CEAC;
---color-hover-teatro: #2A2D1B;
---color-cards-teatro-detalle: #E1E3D4;
---color-card-informativa: #E4DED2;
+    --color-nav: #CCD3DF;
+    --color-texto-nav: #2C3D44;
+    --color-fondo: #FAF7F2;
+    --color-fondo-cardAgenda: #D9D9D9;
+    --color-fondo-cardNoticia: #FFFFFF;
+    --color-letras-hero: #272420;
+    --color-texto-titulos: #000000;
+    --color-footer: #3E3832;
+    --color-boton-espacios-base: #C3BDB6;
+    --color-boton-biblio: #876B3B;
+    --color-boton-teatro: #5E6435;
+    --color-boton-mam: #3B545E;
+    --color-boton-anexo: #598192;
+    --color-badge-tipo: #AFB77B;
+    --color-badge-gratis: #AFB77B;
+    --color-borde-buscador: #A48247;
+    --color-fondo-info: #DEDBD8;
+    --color-fondo-celeste: #B0C2CA;
+    --color-fondo-celeste-bright: #D6DEE1;
+    --color-fondos-biblio: #D2C2A8;
+    --color-btn-vermas: #919B4F;
+    --color-btn-vermas-hover: #444828;
+    --color-btn-noticias: #496A79;
+    --color-fondos-teatro: #C9CEAC;
+    --color-hover-teatro: #2A2D1B;
+    --color-cards-teatro-detalle: #E1E3D4;
+    --color-card-informativa: #E4DED2;
+    --color-hover-espacios: #E8E9E0;
 }
 
 
@@ -45,7 +46,7 @@ body {
 
 .navbar-brand:hover {
     transform: scale(1.05);
-   
+
 
 }
 
@@ -68,24 +69,24 @@ body {
 }
 
 .nav-link {
-     transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .nav-link:hover {
     transform: scale(1.03);
-    
+
 }
 
 
 /*--------BOTONES---------*/
 
-.botones img{
+.botones img {
     height: 50px;
     width: 215px;
     object-fit: contain;
 }
 
-.botones a{
+.botones a {
     background-color: var(--color-boton-espacios-base);
     border-radius: 0;
     flex: 1;
@@ -94,29 +95,29 @@ body {
 
 #biblio:hover {
     background-color: var(--color-boton-biblio);
-    box-shadow:  0 0 8px var(--color-boton-biblio);
+    box-shadow: 0 0 8px var(--color-boton-biblio);
 
 }
 
 #biblio:active {
-    background-color:var(--color-boton-biblio);
+    background-color: var(--color-boton-biblio);
 }
 
 #teatro:hover {
     background-color: var(--color-boton-teatro);
-    box-shadow:  0 0 8px var(--color-boton-teatro);
+    box-shadow: 0 0 8px var(--color-boton-teatro);
 
 }
 
 #museo:hover {
     background-color: var(--color-boton-mam);
-    box-shadow:  0 0 8px var(--color-boton-mam);
+    box-shadow: 0 0 8px var(--color-boton-mam);
 
 }
 
 #anexo:hover {
     background-color: var(--color-boton-anexo);
-    box-shadow:  0 0 8px var(--color-boton-anexo);
+    box-shadow: 0 0 8px var(--color-boton-anexo);
 
 }
 
@@ -141,13 +142,11 @@ body {
     top: 75%;
     transform: translateY(-50%);
     z-index: 10;
-    color: var(--color-letras-hero);    
+    color: var(--color-letras-hero);
 
-    background: linear-gradient(
-        135deg,
-        rgba(204, 211, 223, 0.5),
-        rgba(73, 106, 121, 0.5)
-    );
+    background: linear-gradient(135deg,
+            rgba(204, 211, 223, 0.5),
+            rgba(73, 106, 121, 0.5));
     padding: 0 200px;
     width: 100%;
 }
@@ -167,7 +166,7 @@ body {
 
     .mi-carousel {
         width: 100%;
-        
+
     }
 
     .mi-carousel .carousel-item img {
@@ -194,13 +193,13 @@ body {
 /*------------DESCRIPCION ESPACIO CULTURAL--------------*/
 
 .espacios {
-    transition: all 0.25s ease, color 0.25s ease;
+    transition: all 0.2s ease, color 0.25s ease;
     border-radius: 4px;
 }
 
 @media (hover: hover) {
     .espacios:hover {
-        background-color: #E8E9E0;
+        background-color: var(--color-hover-espacios);
         color: var(--color-boton-teatro);
         cursor: default;
         font-weight: 500;
@@ -211,6 +210,15 @@ body {
     .espacios {
         transition: none;
     }
+}
+
+.espacios a{
+    text-decoration: none;
+    color: var(--color-texto-titulos);
+}
+
+.espacios a:hover {
+    color: var(--color-boton-teatro);
 }
 
 
@@ -224,7 +232,7 @@ body {
 .buscador .input-group-text {
     background-color: var(--color-boton-espacios-base);
     border-color: var(--color-borde-buscador);
-    
+
 }
 
 .buscador .form-control {
@@ -251,7 +259,7 @@ body {
     border-bottom: 1px solid var(--color-btn-noticias);
 }
 
-.encabezado-seccion a{
+.encabezado-seccion a {
     text-decoration: none;
     color: var(--color-btn-noticias);
 }
@@ -268,11 +276,11 @@ body {
 
 .btn {
     border-radius: 0;
-    
+
 }
 
 
-.btn-verMas{
+.btn-verMas {
     background-color: var(--color-nav);
     border-color: var(--color-nav);
     color: var(--color-texto-titulos);
@@ -282,11 +290,11 @@ body {
 .btn-verMas:hover {
     background-color: var(--color-boton-mam);
     border-color: var(--color-boton-mam);
-    
+
 }
 
 
-.btn-verMas-biblio{
+.btn-verMas-biblio {
     background-color: var(--color-fondos-biblio);
     border-color: var(--color-fondos-biblio);
     color: var(--color-texto-titulos);
@@ -296,7 +304,7 @@ body {
 .btn-verMas-biblio:hover {
     background-color: var(--color-btn-vermas-hover);
     border-color: var(--color-btn-vermas-hover);
-    
+
 }
 
 
@@ -307,10 +315,10 @@ body {
     top: 10px;
     right: 10px;
     letter-spacing: 1px;
-    
+
 }
 
-.gratis  {
+.gratis {
     position: absolute;
     align-self: end;
     top: 40px;
@@ -328,7 +336,7 @@ body {
     scrollbar-width: none;
     position: relative;
     width: 100%;
-    
+
 
 }
 
@@ -376,7 +384,7 @@ body {
     right: 0;
     top: 35%;
     z-index: 10;
-    
+
 }
 
 #botonScrollLeft {
@@ -431,6 +439,7 @@ body {
 
 
 @media (max-width: 575.98px) {
+
     #botonScrollRight,
     #botonScrollLeft {
         display: none !important;
@@ -440,7 +449,7 @@ body {
 
 /*------------NOTICIAS--------------*/
 
-.btn-noticia{
+.btn-noticia {
     background-color: var(--color-btn-noticias);
 }
 
@@ -459,31 +468,32 @@ body {
     background-color: var(--color-footer);
 }
 
-.footer p, .footer li{
+.footer p,
+.footer li {
     color: var(--color-nav);
 }
 
-.lista-footer li{
-list-style:  none;
+.lista-footer li {
+    list-style: none;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: var(--color-fondo-cardNoticia);
-    
+
 }
 
-li{
+li {
     transition: transform 0.2s ease-in;
 }
 
-.lista-footer li:hover{
+.lista-footer li:hover {
     transform: scale(1.02);
 }
 
 
 .logo {
-    
+
     display: block;
     margin-left: 0;
     margin-right: auto;
@@ -500,21 +510,21 @@ li{
 
 
 .ultima-columna {
-    
+
     text-align: left;
     font-weight: 600;
-    
+
 }
 
 .bi {
     color: var(--color-fondo-cardNoticia);
     height: 30px;
     width: auto;
-    
+
 }
 
 
-.piso-footer{
+.piso-footer {
     color: var(--color-fondo-cardNoticia);
     justify-content: center;
     font-style: italic;
@@ -528,7 +538,9 @@ li{
 
 /*------------HERO BIBLIOTECA--------------*/
 
-#fotoBiblio, #fotoTeatro, #fotoMmamm {
+#fotoBiblio,
+#fotoTeatro,
+#fotoMmamm {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -723,10 +735,10 @@ li{
 .info-biblio {
     padding: 30px 30px;
     background-color: var(--color-fondos-biblio);
-    border-radius: 10px;
+
 }
 
-.text-justificado{
+.text-justificado {
     text-align: justify;
 }
 
@@ -737,13 +749,15 @@ li{
 /*------------ AGENDA BIBLIO -----------------*/
 
 /*APLICADO A ACORDEONES PARA QUE SEAN RESPONSIVES Y OCUPEN TODO EL ANCHO DEL CONTAINER*/
-.columna-mision, .columna-vision{
+.columna-mision,
+.columna-vision {
     padding-left: 0;
     padding-right: 0;
 
 }
 
 @media (max-width: 575.98px) {
+
     .columna-mision,
     .columna-vision {
         padding-left: 12px;
@@ -761,28 +775,34 @@ li{
     }
 }
 
-.accordion-button.biblio-color:not(.collapsed), .accordion-button.biblio-color {
+.accordion-button.biblio-color:not(.collapsed),
+.accordion-button.biblio-color {
     background-color: var(--color-fondos-biblio);
 }
 
-.accordion-button.biblio-color-2:not(.collapsed), .accordion-button.biblio-color-2 {
+.accordion-button.biblio-color-2:not(.collapsed),
+.accordion-button.biblio-color-2 {
     background-color: var(--color-fondos-biblio);
 }
 
-.accordion-button.teatro-color:not(.collapsed), .accordion-button.teatro-color {
+.accordion-button.teatro-color:not(.collapsed),
+.accordion-button.teatro-color {
     background-color: var(--color-fondos-teatro);
 }
 
-.accordion-button.teatro-color-2:not(.collapsed), .accordion-button.teatro-color-2 {
+.accordion-button.teatro-color-2:not(.collapsed),
+.accordion-button.teatro-color-2 {
     background-color: var(--color-fondos-teatro);
 }
 
 
-.accordion-button.museo-color:not(.collapsed), .accordion-button.museo-color {
+.accordion-button.museo-color:not(.collapsed),
+.accordion-button.museo-color {
     background-color: var(--color-fondo-celeste);
 }
 
-.accordion-button.museo-color-2:not(.collapsed), .accordion-button.museo-color-2 {
+.accordion-button.museo-color-2:not(.collapsed),
+.accordion-button.museo-color-2 {
     background-color: var(--color-fondo-celeste);
 }
 
@@ -809,7 +829,7 @@ li{
 
 /*------------Asociate--------------*/
 
-li{
+li {
     list-style: inherit;
     transition: background-color 0.3s ease;
 }
@@ -817,20 +837,20 @@ li{
 .asociate-li:hover {
     background-color: var(--color-fondo-celeste);
     font-weight: 600;
-   
+
 }
 
 
 strong {
     display: inline-block;
     transition: all 0.3s ease;
-    
+
 }
 
 strong:hover {
-    
+
     transform: scale(1.03) translateY(-1 px);
-    
+
 }
 
 .desbordado {
@@ -866,7 +886,7 @@ strong:hover {
 
 .accordion-button.faq-color:focus {
     box-shadow: 0 0 0 0.25rem rgba(135, 107, 59, 0.25);
-  
+
     outline: none;
 }
 
@@ -931,7 +951,7 @@ button.accordion-button.faq::after {
 .info-teatro {
     background-color: var(--color-fondos-teatro);
     padding: 30px 30px;
-    border-radius: 10px;
+
 }
 
 
@@ -942,14 +962,14 @@ button.accordion-button.faq::after {
     color: var(--color-texto-titulos);
     transition: background-color 0.25s ease, color 0.25s ease;
     border-radius: 4px;
-    
+
 }
 
 
 
 @media (hover: hover) {
     .anclaTeatro:hover {
-        
+
         color: var(--color-hover-teatro);
         cursor: pointer;
         font-weight: 600;
@@ -962,10 +982,157 @@ button.accordion-button.faq::after {
     }
 }
 
+
+
 /*---------MISION Y VISION-----------*/
 
-.accordion-button.teatro-color:not(.collapsed), .accordion-button.teatro-color {
+.accordion-button.teatro-color:not(.collapsed),
+.accordion-button.teatro-color {
     background-color: var(--color-fondos-teatro);
+}
+
+
+
+
+/* ---------SECCIÓN DESTACADA EXPOS----------- */
+
+.seccion-expos {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.expos-destacado {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 280px;
+    overflow: hidden;
+
+    background-color: var(--color-fondo-celeste-bright);
+}
+
+.expos-imagen {
+    min-height: 280px;
+    overflow: hidden;
+}
+
+.expos-imagen img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.expos-destacado:hover .expos-imagen img {
+    transform: scale(1.04);
+}
+
+.expos-contenido {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 3rem;
+    color: #2C3D44;
+}
+
+.expos-etiqueta {
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.expos-contenido h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+.expos-contenido p {
+    margin: 0.75rem 0 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.btn-expos {
+    
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--color-fondo-cardNoticia);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.55rem 0.85rem;
+    border-radius: 10px;
+    background-color: var(--color-boton-anexo);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-expos i {
+    color: var(--color-boton-mam);
+}
+
+.btn-expos {
+    gap: 1rem;
+}
+
+.btn-expos i {
+    font-size: 1.1rem;
+}
+
+.btn-expos:hover {
+    
+    transform: translateY(-3px);
+    border-radius: 10px;
+}
+
+.btn-expos:hover i {
+    color: var(--color-fondo-cardNoticia);
+}
+
+@media (max-width: 767.98px) {
+    .expos-destacado {
+        grid-template-columns: 1fr;
+    }
+
+    .expos-imagen {
+        min-height: 190px;
+        max-height: 230px;
+    }
+
+    .expos-imagen img {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .expos-contenido {
+        padding: 1.5rem;
+    }
+
+    .expos-contenido h2 {
+        font-size: 2.8rem;
+    }
+
+    .expos-contenido p {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .expos-imagen img,
+    .btn-expos {
+        transition: none;
+    }
 }
 
 
@@ -977,13 +1144,13 @@ button.accordion-button.faq::after {
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
-    
+
 }
 
 .card-teatro {
-    background-color:var(--color-cards-teatro-detalle);
+    background-color: var(--color-cards-teatro-detalle);
     padding: 1.5rem;
-    border-radius: 8px;
+
     height: 100%;
     transition: transform 0.25s ease;
 }
@@ -998,14 +1165,15 @@ button.accordion-button.faq::after {
 }
 
 .btn-teatro:hover {
-     background-color: var(--color-boton-teatro);
-     border-color: var(--color-boton-teatro);
+    background-color: var(--color-boton-teatro);
+    border-color: var(--color-boton-teatro);
 }
 
 
 /*---------MISION Y VISION-----------*/
 
-.accordion-button.museo-color:not(.collapsed), .accordion-button.museo-color {
+.accordion-button.museo-color:not(.collapsed),
+.accordion-button.museo-color {
     background-color: var(--color-fondo-celeste);
 }
 
@@ -1019,31 +1187,28 @@ button.accordion-button.faq::after {
 /*------------HITOS HISTORICOS TEATRO--------------*/
 
 
-/* HISTORIA DEL TEATRO - LÍNEA DE TIEMPO */
+/* =========================================
+   HISTORIA MMAMM - LÍNEA DE TIEMPO
+   Sin línea de conexión
+   ========================================= */
 
-/* HISTORIA MMAMM - LÍNEA DE TIEMPO HORIZONTAL */
-
-/* Color exclusivo de la línea de tiempo del MMAMM */
 .historia-mmam {
     --color-linea-mmam: #B0C2CA;
 }
 
-/* Estructura de la línea de tiempo */
+/* Estructura horizontal para pantallas grandes */
 .historia-mmam .linea-tiempo-horizontal {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(8, minmax(220px, 1fr));
     position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 0;
 }
 
-/* Línea que conecta los hitos */
+/* Eliminar la línea horizontal del contenedor */
 .historia-mmam .linea-tiempo-horizontal::before {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: var(--color-fondo-celeste);
+    content: none;
 }
 
 /* Cada hito */
@@ -1053,55 +1218,73 @@ button.accordion-button.faq::after {
     padding: 0 20px;
 }
 
-/* Año y punto */
+/* Eliminar posibles tramos de línea de versiones anteriores */
+.historia-mmam .hito-horizontal::after {
+    content: none;
+}
+
+/* Marca y fecha */
 .historia-mmam .hito-marca {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 25px;
+    min-height: 45px;
 }
 
-/* Punto circular */
+/* Bolitas de cada hito */
 .historia-mmam .hito-marca::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: -7px;
     width: 16px;
     height: 16px;
-    background-color: var(--color-fondo-celeste);
+    background-color: var(--color-linea-mmam);
     border: 3px solid var(--color-fondo);
     border-radius: 50%;
     box-sizing: content-box;
-    z-index: 1;
-    margin-left: -7px;
+    z-index: 2;
+    transition: transform 0.25s ease;
 }
 
-/* Texto del año */
+/* Fechas */
 .historia-mmam .hito-marca span {
-    color: var(----color-fondo-celeste);
+    display: block;
+    position: relative;
+    margin-top: 28px;
+    color: var(--color-texto-nav);
     font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 12px;
 }
 
-/* Contenido */
+/* Contenido de cada hito */
 .historia-mmam .hito-texto {
     padding-top: 5px;
     border-top: 1px solid var(--color-fondo-cardAgenda);
+    transition: transform 0.25s ease;
 }
 
+/* Títulos */
 .historia-mmam .hito-texto h3 {
     font-size: 1.15rem;
     margin: 15px 0 10px;
 }
 
+/* Descripciones */
 .historia-mmam .hito-texto p {
     font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 0;
 }
 
-/* Adaptación para tablet */
-@media (max-width: 767.98px) {
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (max-width: 767.98px) and (min-width: 576px) {
+
     .historia-mmam .hito-horizontal {
         padding: 0 12px;
     }
@@ -1115,21 +1298,22 @@ button.accordion-button.faq::after {
     }
 }
 
-/* Adaptación para celular */
+/* =========================================
+   CELULARES: FORMATO VERTICAL
+   ========================================= */
+
 @media (max-width: 575.98px) {
+
+    /* Un hito debajo del otro */
     .historia-mmam .linea-tiempo-horizontal {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+        overflow: visible;
         gap: 25px;
     }
 
-    /* La línea pasa a ser vertical */
+    /* Sin línea vertical */
     .historia-mmam .linea-tiempo-horizontal::before {
-        top: 8px;
-        bottom: 8px;
-        left: 7px;
-        right: auto;
-        width: 2px;
-        height: auto;
+        content: none;
     }
 
     .historia-mmam .hito-horizontal {
@@ -1138,19 +1322,22 @@ button.accordion-button.faq::after {
 
     .historia-mmam .hito-marca {
         margin-bottom: 12px;
+        min-height: 0;
     }
 
+    /* Bolita a la izquierda de la fecha */
     .historia-mmam .hito-marca::before {
-        position: absolute;
         left: -28px;
         top: 0;
     }
 
+    /* Fechas */
     .historia-mmam .hito-marca span {
         margin-top: 0;
         font-size: 1.4rem;
     }
 
+    /* Sin divisoria superior en celular */
     .historia-mmam .hito-texto {
         border-top: none;
     }
@@ -1161,18 +1348,12 @@ button.accordion-button.faq::after {
     }
 }
 
-/* ANIMACIONES DE LA LÍNEA DE TIEMPO */
+/* =========================================
+   ANIMACIONES
+   ========================================= */
 
-.historia-mmam .hito-marca::before {
-    transition: transform 0.25s ease;
-}
-
-.historia-mmam .hito-texto {
-    transition: transform 0.25s ease;
-}
-
-/* Efectos para dispositivos que permiten hover */
 @media (hover: hover) {
+
     .historia-mmam .hito-horizontal:hover .hito-marca::before {
         transform: scale(1.3);
     }
@@ -1188,6 +1369,7 @@ button.accordion-button.faq::after {
 
 /* Respetar la preferencia de movimiento reducido */
 @media (prefers-reduced-motion: reduce) {
+
     .historia-mmam .hito-marca::before,
     .historia-mmam .hito-texto {
         transition: none;
@@ -1195,16 +1377,99 @@ button.accordion-button.faq::after {
 }
 
 
+/* FORZAR VISIBILIDAD DE LAS BOLITAS DEL MMAMM */
+
+.historia-mmam .linea-tiempo-horizontal::before,
+.historia-mmam .hito-horizontal::after {
+    content: none !important;
+}
+
+.historia-mmam .hito-marca {
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.historia-mmam .hito-marca::before {
+    content: "" !important;
+    display: block !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    flex-shrink: 0;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: -7px !important;
+    margin-top: 0 !important;
+    background-color: #B0C2CA !important;
+    border: 3px solid var(--color-fondo) !important;
+    border-radius: 50% !important;
+    box-sizing: content-box !important;
+    z-index: 2;
+}
+
+.historia-mmam .hito-marca span {
+    margin-top: 12px;
+}
+
+@media (max-width: 575.98px) {
+    .historia-mmam .linea-tiempo-horizontal {
+        grid-template-columns: 1fr;
+        overflow: visible;
+        gap: 25px;
+    }
+
+    .historia-mmam .hito-horizontal {
+        padding-left: 28px;
+    }
+
+    .historia-mmam .hito-marca::before {
+        position: absolute !important;
+        top: 0 !important;
+        left: -28px !important;
+        margin: 0 !important;
+    }
+
+    .historia-mmam .hito-marca span {
+        margin-top: 0;
+    }
+
+    .historia-mmam .hito-texto {
+        border-top: none;
+    }
+}
+
+
+
+
+
+
 /*------------DATOS UTILES MUSEO--------------*/
 
 .info-museo {
     padding: 30px 30px;
     background-color: var(--color-fondo-celeste);
-    border-radius: 10px;
-    color: var(--color-fondo-cardNoticia);
+
+
 }
 
+
+
 /*------------LABORATORIO--------------*/
+
+
+.descrip-lab {
+    background-color: var(--color-fondo-cardNoticia);
+    transition: transform 0.2s ease-in-out;
+    padding: 20px;
+}
+
+.descrip-lab:hover {
+    transform: translateY(-3px);
+
+}
+
 
 /* Imágenes del Laboratorio */
 .imagen-laboratorio {
@@ -1235,8 +1500,8 @@ button.accordion-button.faq::after {
 }
 
 .card-visita-mmamm {
-    border: 1px solid #DEDAD2;
-    border-radius: 16px;
+
+    border-radius: 0;
     overflow: hidden;
     transition: transform 0.2s ease;
 }
@@ -1246,11 +1511,11 @@ button.accordion-button.faq::after {
 }
 
 .card-educativas {
-    background-color: var(--color-fondo-celeste-bright);
+    background-color: var(--color-fondo-celeste);
 }
 
 .card-publico {
-    background-color: var(--color-card-informativa);
+    background-color: var(--color-fondo-celeste-bright);
 }
 
 .icono-visita-mmamm {
@@ -1258,15 +1523,15 @@ button.accordion-button.faq::after {
 }
 
 .card-educativas .icono-visita-mmamm {
-    color: #3B545E;
+    color: var(--color-boton-mam);
 }
 
 .card-publico .icono-visita-mmamm {
-    color: #5E6435;
+    color: var(--color-boton-mam);
 }
 
 .card-visita-mmamm .h4 {
-    color: var(--color-texto-nav);
+    color: var(--color-texto-titulos);
     font-weight: 600;
 }
 
@@ -1279,15 +1544,15 @@ button.accordion-button.faq::after {
 }
 
 .card-educativas .etiqueta-visita {
-    color: #3B545E;
+    color: var(--color-texto-titulos);
 }
 
 .card-publico .etiqueta-visita {
-    color: #5E6435;
+    color: var(--color-texto-titulos);
 }
 
 .card-visita-mmamm hr {
-    border-color: #D5D0C7;
+    border-color: var(--color-boton-mam);
     opacity: 1;
     margin: 1.25rem 0;
 }
@@ -1298,18 +1563,18 @@ button.accordion-button.faq::after {
     gap: 0.75rem;
 }
 
-.dato-visita-mmamm > i {
+.dato-visita-mmamm>i {
     font-size: 1.2rem;
     flex-shrink: 0;
     margin-top: 0.1rem;
 }
 
-.card-educativas .dato-visita-mmamm > i {
-    color: #3B545E;
+.card-educativas .dato-visita-mmamm>i {
+    color: var(--color-boton-mam);
 }
 
-.card-publico .dato-visita-mmamm > i {
-    color: #5E6435;
+.card-publico .dato-visita-mmamm>i {
+    color: var(--color-boton-mam);
 }
 
 .dato-visita-mmamm p {
@@ -1328,11 +1593,68 @@ button.accordion-button.faq::after {
     line-height: 1.5;
 }
 
+.mail-museo {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.mail-museo:hover {
+    font-weight: 600;
+    color: var(--color-fondo-cardNoticia);
+}
+
+
+
+/* CARDS DE VISITAS: MÁS ANCHAS Y COMPACTAS */
+
+.card-visita-mmamm .card-body {
+    padding: 1.25rem !important;
+}
+
+.card-visita-mmamm .icono-visita-mmamm {
+    font-size: 1.7rem;
+}
+
+.card-visita-mmamm h3 {
+    font-size: 1.2rem;
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.4rem;
+}
+
+.card-visita-mmamm hr {
+    margin: 0.75rem 0;
+}
+
+.card-visita-mmamm .dato-visita-mmamm p {
+    line-height: 1.4;
+}
+
+.card-visita-mmamm .dato-visita-mmamm.mt-3 {
+    margin-top: 0.75rem !important;
+}
+
+.card-visita-mmamm .aclaracion-visita {
+    line-height: 1.4;
+    margin-top: 0.75rem !important;
+    margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+    .card-visita-mmamm .card-body {
+        padding: 1rem !important;
+    }
+}
+
+
+
+
+
+
 /* ===== MAPA MMAMM ===== */
 
 .mapa-mmamm {
     border: 1px solid #DEDAD2;
-    border-radius: 16px;
+
     overflow: hidden;
     background-color: var(--color-fondo);
 }
