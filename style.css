@@ -1758,3 +1758,99 @@ background-color: var(--color-fondo-celeste);
         height: 180px;
     }
 }
+
+
+/* ===== BOTON FAB MMAMM===== */
+
+.boton-flotante-expos {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 20px;
+
+    background-color: var(--color-boton-mam);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-flotante-expos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 576px) {
+    .boton-flotante-expos {
+        right: 16px;
+        bottom: 16px;
+        padding: 14px;
+    }
+
+    .boton-flotante-expos span {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .boton-flotante-expos {
+        transition: none;
+    }
+}
+
+
+/* ===== BOTON FAB TEATRO===== */
+
+.boton-flotante-teatro {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 50px;
+
+    background-color: var(--color-boton-teatro);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-flotante-teatro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 576px) {
+    .boton-flotante-teatro {
+        right: 16px;
+        bottom: 16px;
+        padding: 14px;
+    }
+
+    .boton-flotante-teatro span {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .boton-flotante-teatro {
+        transition: none;
+    }
+}
