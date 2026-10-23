@@ -1083,7 +1083,7 @@ background-color: var(--color-fondo-celeste);
     font-weight: 600;
     text-decoration: none;
     padding: 0.55rem 0.85rem;
-    border-radius: 10px;
+   
     background-color: var(--color-boton-anexo);
     transition: all 0.3s ease-in-out;
 }
@@ -1103,7 +1103,7 @@ background-color: var(--color-fondo-celeste);
 .btn-expos:hover {
     
     transform: translateY(-3px);
-    border-radius: 10px;
+    
 }
 
 .btn-expos:hover i {
