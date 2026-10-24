@@ -1,3 +1,17 @@
+const nav = document.querySelector(".navbar");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+        nav.classList.add("nav-scrolled");
+    } else {
+        nav.classList.remove("nav-scrolled");
+    }
+});
+
+
+
+
+
 const contenedor = document.querySelector(".cards-container");
 const derecha = document.querySelector("#botonScrollRight");
 const izquierda = document.querySelector ("#botonScrollLeft");
@@ -63,3 +77,5 @@ contenedorNews.addEventListener("scroll", () => {
     }
 
 });
+
+

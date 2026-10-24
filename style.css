@@ -37,6 +37,21 @@ body {
 }
 
 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: var(--color-nav);
+    transition: background-color 0.3s ease;
+}
+
+/* CUANDO SCROLLEA */
+.navbar.nav-scrolled {
+    background-color: var(--color-fondo-cardNoticia);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);;
+}
+
+
 .navbar-brand img {
     width: 200px;
     min-width: 120px;
@@ -64,9 +79,7 @@ body {
     }
 }
 
-.navbar {
-    background-color: var(--color-nav);
-}
+
 
 .nav-link {
     transition: transform 0.2s ease;
@@ -295,6 +308,10 @@ body {
 
 }
 
+.btn-verMas:active{
+    background-color: var(--color-texto-nav)!important;
+}
+
 
 .btn-verMas-biblio {
     background-color: var(--color-fondos-biblio);
@@ -309,6 +326,9 @@ body {
 
 }
 
+.btn-verMas-biblio:active {
+    background-color: var(--color-footer)!important;
+}
 
 
 .tipo {
@@ -501,6 +521,10 @@ li {
     margin-right: auto;
 }
 
+#logoAnexo {
+    width: 468px;
+}
+
 .primer-columna {
     font-weight: 600;
     justify-content: center;
@@ -542,7 +566,8 @@ li {
 
 #fotoBiblio,
 #fotoTeatro,
-#fotoMmamm {
+#fotoMmamm, 
+#fotoAnexo {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -1051,7 +1076,7 @@ background-color: var(--color-fondo-celeste);
     align-items: flex-start;
     justify-content: center;
     padding: 2.5rem 3rem;
-    color: #2C3D44;
+    color: var(--color-texto-nav);
 }
 
 .expos-etiqueta {
@@ -1733,7 +1758,7 @@ background-color: var(--color-fondo-celeste);
     gap: 0.4rem;
     padding: 0.5rem 0.75rem;
     background-color: #FAF7F2;
-    color: #2C3D44;
+    color: var(--color-texto-nav);
     border-radius: 8px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -1758,6 +1783,90 @@ background-color: var(--color-fondo-celeste);
         height: 180px;
     }
 }
+
+
+
+/* ===== MAPA ANEXO MMAMM ===== */
+
+.mapa-anexo-mmamm {
+    border: 1px solid #DEDAD2;
+    overflow: hidden;
+    background-color: var(--color-fondo);
+}
+
+.mapa-anexo-mmamm-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.mapa-anexo-mmamm-info p {
+    font-size: 0.9rem;
+    color: #5B5B5B;
+}
+
+.enlace-mapa-anexo-mmamm {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    color: #598192;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.enlace-mapa-anexo-mmamm:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.miniatura-mapa-anexo-mmamm {
+    display: block;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.miniatura-mapa-anexo-mmamm iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.indicacion-mapa-anexo-mmamm {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background-color: #FAF7F2;
+    color: var(--color-texto-nav);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+/* ===== ADAPTACIÓN MÓVIL ===== */
+
+@media (max-width: 575.98px) {
+
+    .mapa-anexo-mmamm-info {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    .miniatura-mapa-anexo-mmamm {
+        height: 180px;
+    }
+}
+
 
 
 /* ===== BOTON FAB MMAMM===== */
@@ -1851,6 +1960,55 @@ background-color: var(--color-fondo-celeste);
 
 @media (prefers-reduced-motion: reduce) {
     .boton-flotante-teatro {
+        transition: none;
+    }
+}
+
+
+/* ===== BOTON FAB BIBLIO ===== */
+
+
+.boton-flotante-biblio {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 50px;
+
+    background-color: var(--color-boton-biblio);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-flotante-biblio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 576px) {
+    .boton-flotante-biblio {
+        right: 16px;
+        bottom: 16px;
+        padding: 14px;
+    }
+
+    .boton-flotante-biblio span {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .boton-flotante-biblio {
         transition: none;
     }
 }

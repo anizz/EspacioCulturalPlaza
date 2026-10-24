@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anexo MMAMM | Espacio Cultural Plaza Independencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- NAV-->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="./Images/logo_plaza.png" alt="Espacio Cultural Ciudad de Mendoza">
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto  gap-1 gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            El espacio cultural
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Instituciones que lo conforman
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./biblio.html">
+                                    Biblioteca Ricardo Tudela
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="./teatro.html">
+                                    Teatro Quintanilla
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="./mmamm.html">
+                                    MMAMM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./anexo.html">
+                                    ANEXO MMAMM
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda">
+                            Agenda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">
+                            Noticias
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- BOTONES-->
+    <section class="botones container d-flex flex-wrap justify-content-center gap-5 mt-5">
+        <a href="./biblio.html" class="btn boton-institucion" id="biblio">
+            <img src="./Images/biblio.png">
+        </a>
+        <a href="./teatro.html" class="btn boton-institucion" id="teatro">
+            <img src="./Images/teatro.png">
+        </a>
+        <a href="./mmamm.html" class="btn boton-institucion" id="museo">
+            <img src="./Images/museo.png">
+        </a>
+        <a href="./anexo.html" class="btn boton-institucion" id="anexo">
+            <img src="./Images/anexo.png">
+        </a>
+    </section>
+
+    <!-- HERO-->
+    <section class="hero-biblio mt-5 position-relative
+    ">
+        <img src="./Images/anexo-blanco.png" id="logoAnexo" class="position-absolute top-50 start-50 translate-middle">
+        <img src="./Images/anexo-hero1.jpg" id="fotoAnexo">
+    </section>
+
+    <!-- AGENDA-->
+    <section class="container mt-5" id="agenda-anexo">
+        <!-- TITULO-->
+        <div class="row align-items-center encabezado-seccion pb-3">
+
+            <div class="col">
+                <h2 class="con-cursor">Agenda | Destacados</h2>
+            </div>
+
+            <div class="col text-end">
+                <h5 class="con-cursor"><a href="#">Ver más</a></h5>
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+        <div class="cards-wrapper mt-5">
+            <button class="btn btn-light" id="botonScrollLeft">←</button>
+            <div class="cards-container">
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">TEATRO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">28 de Octubre | 19 HS</h6>
+                        <h5>📍TEATRO QUINTANILLA</h5>
+                        <p class="card-text">FESTIVAL DE ESTRENOS DE TEATROS DE LA CIUDAD DE MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <span class="badge text-bg-secondary tipo">EXPO</span>
+                    <span class="badge text-bg-secondary gratis">GRATIS</span>
+                    <img src="./Images/unnamed.jpg" class="card-img-top" alt="AGENDA">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Octubre | 18 HS</h6>
+                        <h5>📍MMAMM</h5>
+                        <p class="card-text">RECONSTRUCCIÓN: UN RELATO DE LAS ARTES VISUALES EN MENDOZA</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Accedé</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-light" id="botonScrollRight">→</button>
+        </div>
+    </section>
+
+    <!-- NOTICIAS-->
+    <section class="container mt-5">
+        <!-- TITULO-->
+        <div class="row align-items-center encabezado-seccion pb-3">
+
+            <div class="col">
+                <h2 class="con-cursor">Noticias</h2>
+            </div>
+
+            <div class="col text-end">
+                <h5 class="con-cursor"> <a href="#">Ver más</a></h5>
+            </div>
+
+        </div>
+
+        <!-- CARDS-->
+        <div class="cards-wrapper mt-5">
+            <button class="btn btn-light" id="botonScrollLeftNews">←</button>
+            <div class="cards-container news-container">
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+                <div class="card noticia-card" style="width: 24rem;">
+                    <img src="./Images/unnamed-1-2048x1366.jpg" class="card-img-top" alt="noticias">
+                    <div class="card-body">
+                        <h6 class="card-title">20 de Agosto, 2026</h6>
+                        <h5 class="card-title">Los chicos podrán sumarse al programa «Valija de Restauro» en el MMAMM
+                        </h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-primary btn-verMas">Leer</a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-light" id="botonScrollRightNews">→</button>
+        </div>
+
+
+    </section>
+
+    <!-- DATOS UTILES-->
+    <section class="container mt-5 info-museo">
+        <div>
+            <h5 class="con-cursor">Datos útiles</h5>
+        </div>
+        <div class="row mt-3 datos-utiles-fila">
+            <div class="col-12 col-lg-4 mt-3 dato-util">
+                <strong>🎟️ Ingreso: </strong><br>Gratuito y abierto a toda la comunidad.
+            </div>
+            <div class="col-12 col-lg-4 mt-3 dato-util">
+                <strong>🕐 Horarios:</strong><br> Martes a viernes de 10 a 19:00h.<br>Sábados, domingos y feriados de 16 a 20:00h.
+            </div>
+            <div class="col-12 col-lg-4 mt-3 dato-util">
+                <strong>✉️ Contacto:</strong><br> <span class="desbordado">mmamm@ciudaddemendoza.gov.ar</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- UBICACIÓN ANEXO MMAMM -->
+    <div class="container mapa-anexo-mmamm mt-4">
+
+        <div class="mapa-anexo-mmamm-info">
+            <div>
+                <h3 class="h5 mb-1">¿Dónde estamos?</h3>
+                <p class="mb-0">Anexo del Museo Municipal de Arte Moderno de Mendoza</p>
+            </div>
+
+            <a class="enlace-mapa-anexo-mmamm" href="https://maps.app.goo.gl/vUxk7LHWuHBuqKYn6" target="_blank"
+                rel="noopener noreferrer">
+                Cómo llegar
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+
+        <a class="miniatura-mapa-anexo-mmamm" href="https://maps.app.goo.gl/vUxk7LHWuHBuqKYn6" target="_blank"
+            rel="noopener noreferrer" aria-label="Abrir ubicación del Anexo MMAMM en Google Maps">
+
+            <iframe title="Ubicación del Anexo MMAMM"
+                src="https://maps.google.com/maps?q=-32.875573,-68.8421506&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <span class="indicacion-mapa-anexo-mmamm">
+                <i class="bi bi-box-arrow-up-right"></i>
+                Abrir en Google Maps
+            </span>
+
+        </a>
+
+    </div>
+
+
+    <!-- FOOTER-->
+    <section class="footer">
+        <div class="container mt-5 pt-5 ">
+            <div class="row g-4">
+                <div class="col-12 col-md-4 d-flex flex-column gap-2 primer-columna">
+                    <div class="d-flex align-items-start logo"><img src="./Images/logo-footer.png"></div>
+                    <div>
+                        <p class="con-cursor"> Secretaría de Desarrollo<br>
+                            Económico y Turismo</p>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 seg-columna">
+                    <ul class="d-flex flex-column gap-2 ps-0 lista-footer">
+                        <li><a href="#">El Espacio Cultural</a></li>
+                        <li><a href="#">Instituciones que lo conforman</a></li>
+                        <li><a href="#">Agenda</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 ultima-columna d-flex flex-column gap-2">
+                    <p class="con-cursor"> PLAZA INDEPENDENCIA:
+                        Gral. Espejo 300, M5502 AVJ, Mendoza.</p>
+
+                    <p class="con-cursor"> ANEXO MMAMM:
+                        Los Toneles, M5502 Mendoza.</p>
+
+                </div>
+            </div>
+            <div class="row piso-footer pt-3 pb-3">
+                <div class="col-12 con-cursor">Términos y condiciones · Política de privacidad · Accesibilidad
+                    © 2026 Municipalidad de la Ciudad de Mendoza. Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+    <!-- BOTÓN FLOTANTE -->
+    <a href="#agenda-anexo" class="boton-flotante-expos" aria-label="Ver exposiciones">
+        <i class="bi bi-images"></i>
+        <span>Ver exposiciones</span>
+    </a>
+
+
+</body>
+
+</html>
