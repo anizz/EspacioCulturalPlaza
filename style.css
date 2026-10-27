@@ -101,9 +101,31 @@ body {
 
 .botones a {
     background-color: var(--color-boton-espacios-base);
-    border-radius: 0;
+    border-radius: 10px;
     flex: 1;
 }
+
+/* Institución seleccionada: mantiene su color */
+#biblio.activo {
+    background-color: var(--color-fondos-biblio);
+   
+}
+
+#teatro.activo {
+    background-color: var(--color-fondos-teatro);
+    
+}
+
+#museo.activo {
+    background-color: var(--color-fondo-celeste);
+  
+}
+
+#anexo.activo {
+    background-color: var(--color-fondo-celeste);
+    
+}
+
 
 
 #biblio:hover {
@@ -133,6 +155,8 @@ body {
     box-shadow: 0 0 8px var(--color-boton-anexo);
 
 }
+
+
 
 /*--------SLIDES---------*/
 
@@ -566,12 +590,19 @@ li {
 
 #fotoBiblio,
 #fotoTeatro,
-#fotoMmamm, 
-#fotoAnexo {
+#fotoMmamm 
+ {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
+
+#fotoAnexo {
+    width: 100%;
+    height: 500px;
+    object-fit: none;
+}
+
 
 
 
@@ -762,6 +793,7 @@ li {
 .info-biblio {
     padding: 30px 30px;
     background-color: var(--color-fondos-biblio);
+    border-radius: 10px;
 
 }
 
@@ -978,6 +1010,7 @@ button.accordion-button.faq::after {
 .info-teatro {
     background-color: var(--color-fondos-teatro);
     padding: 30px 30px;
+    border-radius: 10px;
 
 }
 
@@ -1040,6 +1073,7 @@ button.accordion-button.faq::after {
     overflow: hidden;
     background-color: var(--color-fondo-celeste-bright);
     transition: all 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 
@@ -1077,6 +1111,7 @@ background-color: var(--color-fondo-celeste);
     justify-content: center;
     padding: 2.5rem 3rem;
     color: var(--color-texto-nav);
+    
 }
 
 .expos-etiqueta {
@@ -1188,7 +1223,7 @@ background-color: var(--color-fondo-celeste);
 .card-teatro {
     background-color: var(--color-cards-teatro-detalle);
     padding: 1.5rem;
-
+    border-radius: 10px;
     height: 100%;
     transition: transform 0.25s ease;
 }
@@ -1498,7 +1533,7 @@ background-color: var(--color-fondo-celeste);
 .info-museo {
     padding: 30px 30px;
     background-color: var(--color-fondo-celeste);
-
+    border-radius: 10px;
 
 }
 
@@ -1511,6 +1546,7 @@ background-color: var(--color-fondo-celeste);
     background-color: var(--color-fondo-cardNoticia);
     transition: transform 0.2s ease-in-out;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .descrip-lab:hover {
@@ -1549,7 +1585,7 @@ background-color: var(--color-fondo-celeste);
 
 .card-visita-mmamm {
 
-    border-radius: 0;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s ease;
 }
