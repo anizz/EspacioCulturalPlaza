@@ -1054,10 +1054,8 @@ button.accordion-button.faq::after {
 
 
 
+
 /* ---------SECCIÓN DESTACADA EXPOS TEATRO----------- */
-
-
-
 
 .expos-destacado-teatro {
     margin: 0;
@@ -1114,47 +1112,13 @@ background-color: var(--color-fondos-teatro);
     color: var(--color-fondo-cardNoticia);
 }
 
-@media (max-width: 767.98px) {
-    .expos-destacado {
-        grid-template-columns: 1fr;
-    }
-
-    .expos-imagen {
-        min-height: 190px;
-        max-height: 230px;
-    }
-
-    .expos-imagen img {
-        height: 220px;
-        min-height: 220px;
-    }
-
-    .expos-contenido {
-        padding: 1.5rem;
-    }
-
-    .expos-contenido h2 {
-        font-size: 2.8rem;
-    }
-
-    .expos-contenido p {
-        font-size: 1rem;
-        margin-bottom: 1.25rem;
-    }
-
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-    .expos-imagen img,
-    .btn-expos {
-        transition: none;
-    }
+.expos-destacado-teatro:hover .expos-imagen img {
+    transform: scale(1.04);
 }
 
 
 
-/* ---------SECCIÓN DESTACADA EXPOS----------- */
+/* ---------SECCIÓN DESTACADA EXPOS TEATRO----------- */
 
 .seccion-expos {
     width: 100%;
