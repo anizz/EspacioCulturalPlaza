@@ -107,22 +107,22 @@ body {
 
 /* Institución seleccionada: mantiene su color */
 #biblio.activo {
-    background-color: var(--color-fondos-biblio);
+    background-color: var(--color-boton-biblio);
    
 }
 
 #teatro.activo {
-    background-color: var(--color-fondos-teatro);
+    background-color: var(--color-boton-teatro);
     
 }
 
 #museo.activo {
-    background-color: var(--color-fondo-celeste);
+    background-color: var(--color-boton-anexo);
   
 }
 
 #anexo.activo {
-    background-color: var(--color-fondo-celeste);
+    background-color: var(--color-boton-anexo);
     
 }
 
@@ -134,9 +134,6 @@ body {
 
 }
 
-#biblio:active {
-    background-color: var(--color-boton-biblio);
-}
 
 #teatro:hover {
     background-color: var(--color-boton-teatro);
@@ -144,17 +141,13 @@ body {
 
 }
 
-#museo:hover {
+#museo:hover, #anexo:hover {
     background-color: var(--color-boton-mam);
     box-shadow: 0 0 8px var(--color-boton-mam);
 
 }
 
-#anexo:hover {
-    background-color: var(--color-boton-anexo);
-    box-shadow: 0 0 8px var(--color-boton-anexo);
 
-}
 
 
 
@@ -232,6 +225,7 @@ body {
 .espacios {
     transition: all 0.2s ease, color 0.25s ease;
     border-radius: 4px;
+    font-weight: 500;
 }
 
 @media (hover: hover) {
@@ -506,12 +500,19 @@ body {
 
 /*------------FOOTER--------------*/
 
-
-
-
-
 .footer {
     background-color: var(--color-footer);
+}
+
+.ubicacion {
+    text-decoration: none;
+    color: var(--color-fondo-cardNoticia);
+    
+}
+
+.ubicacion:hover {
+    color: var(--color-boton-anexo);
+    cursor: pointer;
 }
 
 .footer p,
@@ -551,7 +552,7 @@ li {
 
 .primer-columna {
     font-weight: 600;
-    justify-content: center;
+    
 }
 
 .seg-columna {
@@ -1053,6 +1054,105 @@ button.accordion-button.faq::after {
 
 
 
+/* ---------SECCIÓN DESTACADA EXPOS TEATRO----------- */
+
+
+
+
+.expos-destacado-teatro {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 280px;
+    overflow: hidden;
+    background-color: var(--color-cards-teatro-detalle);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.expos-destacado-teatro:hover {
+background-color: var(--color-fondos-teatro);
+
+
+}
+
+
+.btn-expos-teatro {
+    
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--color-fondo-cardNoticia);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.55rem 0.85rem;
+   
+    background-color: var(--color-hover-teatro);
+    transition: all 0.3s ease-in-out;
+    gap: 1rem;
+}
+
+
+.btn-expos-teatro i {
+    color: var(--color-boton-mam);
+}
+
+
+
+.btn-expos-teatro i {
+    font-size: 1.1rem;
+}
+
+.btn-expos-teatro:hover {
+    
+    transform: translateY(-3px);
+    
+}
+
+.btn-expos-teatro:hover i {
+    color: var(--color-fondo-cardNoticia);
+}
+
+@media (max-width: 767.98px) {
+    .expos-destacado {
+        grid-template-columns: 1fr;
+    }
+
+    .expos-imagen {
+        min-height: 190px;
+        max-height: 230px;
+    }
+
+    .expos-imagen img {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .expos-contenido {
+        padding: 1.5rem;
+    }
+
+    .expos-contenido h2 {
+        font-size: 2.8rem;
+    }
+
+    .expos-contenido p {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .expos-imagen img,
+    .btn-expos {
+        transition: none;
+    }
+}
+
+
 
 /* ---------SECCIÓN DESTACADA EXPOS----------- */
 
@@ -1143,7 +1243,7 @@ background-color: var(--color-fondo-celeste);
     font-weight: 600;
     text-decoration: none;
     padding: 0.55rem 0.85rem;
-   
+     gap: 1rem;
     background-color: var(--color-boton-anexo);
     transition: all 0.3s ease-in-out;
 }
@@ -1152,9 +1252,7 @@ background-color: var(--color-fondo-celeste);
     color: var(--color-boton-mam);
 }
 
-.btn-expos {
-    gap: 1rem;
-}
+
 
 .btn-expos i {
     font-size: 1.1rem;
@@ -1594,11 +1692,9 @@ background-color: var(--color-fondo-celeste);
     transform: translateY(-3px);
 }
 
-.card-educativas {
-    background-color: var(--color-fondo-celeste);
-}
 
-.card-publico {
+
+.card-publico, .card-educativas {
     background-color: var(--color-fondo-celeste-bright);
 }
 
@@ -1903,6 +1999,52 @@ background-color: var(--color-fondo-celeste);
     }
 }
 
+/* ===== BOTON FAB NOTICIAS===== */
+
+.boton-flotante-noticias {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+    border-radius: 50px;
+
+    background-color: var(--color-boton-mam);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-flotante-noticias:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 576px) {
+    .boton-flotante-noticias {
+        right: 16px;
+        bottom: 16px;
+        padding: 14px;
+    }
+
+    .boton-flotante-noticias span {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .boton-flotante-noticias {
+        transition: none;
+    }
+}
 
 
 /* ===== BOTON FAB MMAMM===== */
@@ -1918,7 +2060,7 @@ background-color: var(--color-fondo-celeste);
     gap: 10px;
 
     padding: 14px 20px;
-    border-radius: 20px;
+    border-radius: 50px;
 
     background-color: var(--color-boton-mam);
     color: white;
@@ -1955,10 +2097,10 @@ background-color: var(--color-fondo-celeste);
 
 /* ===== BOTON FAB TEATRO===== */
 
-.boton-flotante-teatro {
+.boton-flotante-teatro-agenda {
     position: fixed;
     right: 24px;
-    bottom: 24px;
+    bottom: 104px;
     z-index: 1000;
 
     display: flex;
@@ -1977,25 +2119,25 @@ background-color: var(--color-fondo-celeste);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.boton-flotante-teatro:hover {
+.boton-flotante-teatro-agenda:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
 }
 
 @media (max-width: 576px) {
-    .boton-flotante-teatro {
+    .boton-flotante-teatro-agenda {
         right: 16px;
         bottom: 16px;
         padding: 14px;
     }
 
-    .boton-flotante-teatro span {
+    .boton-flotante-teatro-agenda span {
         display: none;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .boton-flotante-teatro {
+    .boton-flotante-teatro-agenda {
         transition: none;
     }
 }
