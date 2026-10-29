@@ -1117,6 +1117,54 @@ background-color: var(--color-fondos-teatro);
 }
 
 
+/* CTA DEL TEATRO: ADAPTACIÓN PARA CELULARES */
+@media (max-width: 575.98px) {
+
+    .expos-destacado-teatro {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .expos-destacado-teatro .expos-imagen {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+    }
+
+    .expos-destacado-teatro .expos-imagen img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .expos-destacado-teatro .expos-contenido {
+        padding: 1.5rem;
+    }
+
+    .expos-destacado-teatro .expos-contenido h2 {
+        margin-bottom: 0.75rem;
+    }
+
+    .expos-destacado-teatro .expos-contenido p {
+        margin-bottom: 1.25rem;
+    }
+
+    .expos-destacado-teatro .btn-expos-teatro {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        max-width: 100%;
+        padding: 0.75rem 1rem;
+    }
+}
+
+
+
 
 /* ---------SECCIÓN DESTACADA EXPOS TEATRO----------- */
 
@@ -1281,6 +1329,7 @@ background-color: var(--color-fondo-celeste);
     border-radius: 10px;
 
 }
+
 
 .card-teatro {
     background-color: var(--color-cards-teatro-detalle);
